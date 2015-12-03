@@ -1,0 +1,113 @@
+<?php
+$module_name = 'anmol_Applications';
+$viewdefs [$module_name] =
+    array(
+        'EditView' =>
+            array(
+                'templateMeta' =>
+                    array(
+                        'maxColumns' => '2',
+                        'widths' =>
+                            array(
+                                0 =>
+                                    array(
+                                        'label' => '10',
+                                        'field' => '30',
+                                    ),
+                                1 =>
+                                    array(
+                                        'label' => '10',
+                                        'field' => '30',
+                                    ),
+                            ),
+                        'useTabs' => false,
+                        'tabDefs' =>
+                            array(
+                                'DEFAULT' =>
+                                    array(
+                                        'newTab' => false,
+                                        'panelDefault' => 'expanded',
+                                    ),
+                            ),
+                    ),
+                'panels' =>
+                    array(
+                        'default' =>
+                            array(
+                                0 =>
+                                    array(
+                                        0 =>
+                                            array(
+                                                'name' => 'anmol_course_search_anmol_applications_1_name',
+                                            ),
+                                    ),
+                                1 =>
+                                    array(
+                                        0 => 'description',
+                                        1 => 'assigned_user_name',
+                                    ),
+                            ),
+                    ),
+            ),
+    );
+?>
+
+<!--script>
+    (function ($) {
+        $(document).ready(function () {
+
+
+            // watch for a change in account ID
+
+
+            $('#btn_anmol_course_search_anmol_applications_1_name').click(function () {              //identify the click
+                checkAccountIdChange();
+            });
+
+            $('#anmol_course_search_anmol_applications_1_name').blur(function () {					//identify the typingS
+                checkAccountIdChange();
+            });
+
+            function checkAccountIdChange() {
+                var theInterval = setInterval(function () {
+                    var oldId = $('#anmol_course_search_anmol_applications_1_name').data('oldId');
+                    var newId = $('#anmol_course_search_anmol_applications_1_name').val();
+                    if (oldId != newId && newId != '') {
+                        getAccountData(newId, theInterval);
+                        $('#anmol_course_search_anmol_applications_1_name').data('oldId', newId);
+                    }
+
+                }, 500);
+            }
+
+            function getAccountData(id, theInterval) {
+
+                // Function to get the id of the Selected Course
+                alert("course selected");
+                alert("Course Id: " + $('#anmol_course_search_anmol_applications_1anmol_course_search_ida').val());
+
+
+                /* Adds visibile checkbox */
+                $('#detailpanel_1').append($('<input>', { id: "VisibleCheckbox", type: "checkbox", name: "VisibleCheckbox"}));
+
+
+                clearInterval(theInterval);
+
+            }
+
+
+            /************ This adds a Dialogue box*/
+
+            $(function () {
+                $("#dialog222").dialog();
+            });
+
+            /*************************/
+
+            $("#btn_assigned_user_name,#btn_clr_assigned_user_name").css("display", "none");  // hide the assignment buttons
+            $("#assigned_user_name,#anmol_course_search_anmol_applications_1_name").attr("disabled", "true");    // disable the assignment box
+
+
+        })
+    })(jQuery)
+</script-->
