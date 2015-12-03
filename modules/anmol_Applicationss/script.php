@@ -92,6 +92,8 @@ class script
                                     $('#' + obj[index].uni_id).append(obj[index].uni_name + '</br>')
 
                                 })
+// Prevents the List from appending again. Issue Resolved.
+                                //  return false;
                             }
 
                         })
