@@ -31,7 +31,7 @@ class check_mobile
             if ($mobile_phone == $phone_mobile2 && $id2 != $id && $deleted1 == '0') {
                 echo "</br>The contact number ";
 
-                echo $phone_mobile;
+                echo $phone_mobile2;
                 echo " is already in the database!<br/>";
                 echo "<a href='http://crm.siecindia.com/index.php?action=ajaxui#ajaxUILoc=index.php%3Fmodule%3DLeads%26action%3Dindex'>Click Here to Go Back</a>";
                 echo "<br/><a href='http://crm.siecindia.com/index.php?action=ajaxui#ajaxUILoc=index.php%3Fmodule%3DLeads%26action%3DEditView%26return_module%3DLeads%26return_action%3DDetailView
