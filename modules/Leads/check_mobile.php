@@ -61,8 +61,8 @@ class check_mobile
 
                 //create a new cURL resource
                 $ch = curl_init();
-                // set URL and other appropriate options
-                curl_setopt($ch, CURLOPT_URL, "http://bhashsms.com/api/sendmsg.php?user=SIEC&pass=siec@@*$$*&sender=SiecIN&phone={$mobile_phone}&text=Hi%20{$bean->first_name}}%2C%0AWelcome%20to%20SIEC.%20Please%20leave%20your%20feedback%20on%3A%20http%3A%2F%2Fsiecindia.com%2Ffeedback%0AThank%20You.&priority=sdnd&stype=normal");
+                // set URL and other appropriate optionss
+                curl_setopt($ch, CURLOPT_URL, "http://bhashsms.com/api/sendmsg.php?user=SIEC&pass=siec@@*$$*&sender=SiecIN&phone={$mobile_phone}&text=Hi%20{$bean->first_name}%2C%0AWelcome%20to%20SIEC.%20Please%20leave%20your%20feedback%20on%3A%20http%3A%2F%2Fsiecindia.com%2Ffeedback%0AThank%20You.&priority=sdnd&stype=normal");
                 curl_setopt($ch, CURLOPT_HEADER, 0);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 //grab URL and pass it to the browser
