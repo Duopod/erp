@@ -10,8 +10,28 @@ class update_uni
 
     public function uni($bean, $event, $arguments)
     {
-        
-        // die;
+// File Operations
+        // Check File Size
+        $f_size = $_FILES['filename_file']['size'];
+
+        if ($f_size > 9000000) {
+            die("File Size Should be less than 9MB");
+        }
+        // First check if the File is Selected or no
+        $f_name = $bean->filename;
+
+        if ($f_name == "") {
+            die("Error: File not Selected!");
+        };
+        // Check File Extension Zip or No
+        $f_extn = explode(".", $f_name);
+
+        if ($f_extn[1] != "zip") {
+            die("Error: Please Upload Zip Files Only!");
+        }
+
+
+        //**********************************************************
         $course_id = $bean->anmol_course_search_anmol_applicationss_2anmol_course_search_ida;
         $id = $bean->id;
         // die($id);

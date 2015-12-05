@@ -2,6 +2,26 @@
  //WARNING: The contents of this file are auto-generated
 
 
+// created: 2015-08-22 13:15:21
+$dictionary['Account']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
+
+
+$dictionary['Account']['fields']['SecurityGroups'] = array(
+    'name' => 'SecurityGroups',
+    'type' => 'link',
+    'relationship' => 'securitygroups_accounts',
+    'module' => 'SecurityGroups',
+    'bean_name' => 'SecurityGroup',
+    'source' => 'non-db',
+    'vname' => 'LBL_SECURITYGROUPS',
+);
+
+
+// created: 2015-08-22 13:15:25
+$dictionary['Account']['fields']['jjwg_maps_geocode_status_c']['inline_edit'] = 1;
+
+
+
 $dictionary["Account"]["fields"]["aos_quotes"] = array(
     'name' => 'aos_quotes',
     'type' => 'link',
@@ -61,39 +81,13 @@ $dictionary["Account"]["relationships"]["account_aos_contracts"] = array(
 
 
 
-
-$dictionary['Account']['fields']['SecurityGroups'] = array(
-    'name' => 'SecurityGroups',
-    'type' => 'link',
-    'relationship' => 'securitygroups_accounts',
-    'module' => 'SecurityGroups',
-    'bean_name' => 'SecurityGroup',
-    'source' => 'non-db',
-    'vname' => 'LBL_SECURITYGROUPS',
-);
-
-
-
-
-
-
 // created: 2015-08-22 13:15:26
 $dictionary['Account']['fields']['jjwg_maps_address_c']['inline_edit'] = 1;
 
 
 
-// created: 2015-08-22 13:15:25
-$dictionary['Account']['fields']['jjwg_maps_geocode_status_c']['inline_edit'] = 1;
-
-
-
 // created: 2015-08-22 13:15:23
 $dictionary['Account']['fields']['jjwg_maps_lat_c']['inline_edit'] = 1;
-
-
-
-// created: 2015-08-22 13:15:21
-$dictionary['Account']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
 
 
 ?>
