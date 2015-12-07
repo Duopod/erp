@@ -146,7 +146,7 @@ class script
                     }
 
 
-                    $("#assigned_user_name,#btn_assigned_user_name,#btn_clr_assigned_user_name,#anmol_applicationss_anmol_application_stages_1_name,#btn_anmol_applicationss_anmol_application_stages_1_name,#btn_clr_anmol_applicationss_anmol_application_stages_1_name,#app_sent_to_uni_c").attr("disabled", "true");
+                    $("#assigned_user_name,#btn_assigned_user_name,#btn_clr_assigned_user_name,#anmol_applicationss_anmol_application_stages_1_name,#btn_anmol_applicationss_anmol_application_stages_1_name,#btn_clr_anmol_applicationss_anmol_application_stages_1_name,#app_sent_to_uni_c,#name").attr("disabled", "true");
                     $('#filename_label').parent().css("display", "none");
                     $('#application_stage_history_c_label').parent().css("display", "none")
                     // Hide the Upload Box and the Email Fields
