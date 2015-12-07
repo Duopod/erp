@@ -91,7 +91,9 @@ class operations
 
             $bean->app_sent_to_uni_c = "1";
             // Add Comment in App Stage History that the application has been Forwarded.
-            $bean->application_stage_history_c = $bean->application_stage_history_c . " </br >>>" . "Application Forwarded to University on Email: " . $bean->uni_email_c . " <a href=\'" . $loc2 . "\'>View File</a>";
+
+
+            $bean->application_stage_history_c = $bean->application_stage_history_c . " >> <b style = \"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Application Forwarded to University on Email: </b>" . $bean->uni_email_c . " <a href=\'" . $loc2 . "\'>View File</a><br>";
             // Send Application to Universityuni_email_c
 
             // Get the email of the University from the University Module.
@@ -120,7 +122,7 @@ class operations
             // Get Pendency remark at stage 1
 
             // Prevent the Application to be sent again.
-            $subject_stage1 = "SIEC Education >> Pendency Update " . $bean->email_subject_c . $application_name;
+            $subject_stage1 = "SIEC Education >> Pendency Update " . $bean->email_subject_c . " " . $application_name;
             $body_stage1 = $bean->email_body_c;
             $mime_type = $bean->file_mime_type;
             $filename = "Pendency_Update_Stage1_" . $application_name . ".zip";
@@ -169,7 +171,7 @@ class operations
 
 
             //  $bean->app_sent_to_uni_c = "11";
-            $bean->application_stage_history_c = $bean->application_stage_history_c . "</br>>> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Pendency Updated to University: " . " <a href=\'" . $loc2 . "\'>View File</a>";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . "</br>>> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Pendency Updated to University: " . " <a href=\'" . $loc2 . "\'>View File</a><br>";
 
 
         }
@@ -195,7 +197,7 @@ class operations
 
 
             $bean->app_sent_to_uni_c = "11";
-            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Unconditional Offer Letter Recieved!" . " <a href=\'" . $loc2 . "\'>View File</a>";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Unconditional Offer Letter Recieved!" . " <a href=\'" . $loc2 . "\'>View File</a><br>";
 
 
         }
@@ -221,7 +223,7 @@ class operations
             }
 
             $bean->app_sent_to_uni_c = "12";
-            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Conditional Offer Letter Recieved!" . " <a href=\'" . $loc2 . "\'>View File</a>";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Conditional Offer Letter Recieved!" . " <a href=\'" . $loc2 . "\'>View File</a><br>";
 
 
         }
@@ -232,7 +234,7 @@ class operations
 
             //Get a Unique No
 
-            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\">Application Rejected by University</b>";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\">Application Rejected by University</b><br>";
 
 
         }
@@ -242,7 +244,7 @@ class operations
 // Get pendency remark at stage 1
 
 
-            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\">Application Rejected by Student</b>";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\">Application Rejected by Student</b><br>";
 
 
         }
@@ -251,14 +253,14 @@ class operations
         if ($bean->application_stage_c == 'stage_2') {
             // Add remark box appears, remark to be added by application team -<< done
             // Get pendency remark at stage 1
-            $subject_stage1 = "SIEC Education: Financial Documents" . $bean->email_subject_stage2_c . $application_name;
             $body_stage1 = $bean->email_body_stage2_c;
 
 
             $mime_type = $bean->file_mime_type;
             $filename = "Application_Finance_Docs_Stage2_" . $application_name . ".zip";
             $file_location = "/home/admin/web/siecindia.com/public_html/upload/" . $id;
-            $subject = $subject_stage1;
+            $subject = "SIEC Education: Financial Documents " . $bean->email_subject_c . " " . $application_name;
+
             $body = $body_stage1;
             $email = $bean->uni_email_save_c;
             //Create Object New email
@@ -299,7 +301,7 @@ class operations
 
 
             $bean->app_sent_to_uni_c = "2";
-            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Financials Forwarded to University" . " <a href=\'" . $loc2 . "\'>View File</a>";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> Financials Forwarded to University" . " <a href=\'" . $loc2 . "\'>View File</a><br>";
 
 
         }
@@ -320,6 +322,66 @@ class operations
             // $bean->pendency_state_c = "1";
 
         }
+
+        if ($bean->application_stage_c == 'pendency_stage_2_update_to_uni') {
+            // Add remark box appears, remark to be added by application team -<< done
+            // Get Pendency remark at stage 1
+
+            // Prevent the Application to be sent again.
+            $subject_stage1 = "SIEC Education >> Pendency Update Financials " . $bean->email_subject_c . " " . $application_name;
+            $body_stage1 = $bean->email_body_c;
+            $mime_type = $bean->file_mime_type;
+            $filename = "Pendency_Update_Stage1_" . $application_name . ".zip";
+            $file_location = "/home/admin/web/siecindia.com/public_html/upload/" . $id;
+            $subject = $subject_stage1;
+            $body = $body_stage1;
+            $email = $bean->uni_email_save_c;
+            //Create Object New email
+            $emailObj = new Email();
+            $defaults = $emailObj->getSystemDefaultEmail();
+            $mail = new SugarPHPMailer();
+            $mail->setMailerForSystem();
+            $mail->From = $defaults['email'];
+            $mail->FromName = $defaults['name'];
+            $mail->Subject = $subject;
+            $mail->Body = $body;
+            $mail->prepForOutbound();
+            $name_to = "University";
+            $copy_to_email = "andy228448@gmail.com";
+            $mail->AddCC($copy_to_email);
+            $mail->AddAddress($email, $name_to);
+            $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);
+            @$mail->Send();
+
+            // Moving the file to the new location
+
+
+            //Get a Unique No
+            $unq_extension = uniqid();
+
+            echo $file_name = preg_replace('/[^A-Za-z0-9]/', '_', $application_name) . "_" . $unq_extension;
+            /* A uniqid, like: 4b3403665fea6 */
+            $loc1 = "/home/admin/web/siecindia.com/public_html/upload/" . $bean->id;
+            $loc2 = "/home/admin/web/siecindia.com/public_html/custom/uploads/outbound/stage2/pendencies/" . $file_name . ".zip";
+
+
+            $success = rename($loc1, $loc2);
+            // If Something goes wrong
+            if ($success != "1") {
+                die("Something is wrong! Please contact your Administrator");
+            } else {
+                $bean->filename = ""; // Reset the Upload Button
+            }
+
+// Sent Email
+
+
+            //  $bean->app_sent_to_uni_c = "11";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . "</br>>> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\">Financial Pendency Updated to University: " . " <a href=\'" . $loc2 . "\'>View File</a><br>";
+
+
+        }
+
 
         if ($bean->application_stage_c == 'coe') {
             // Add remark box appears, remark to be added by application team -<< done
@@ -343,7 +405,7 @@ class operations
 
 
             $bean->app_sent_to_uni_c = "3";
-            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> COE Recieved" . " <a href=\'" . $loc2 . "\'>View File</a>";
+            $bean->application_stage_history_c = $bean->application_stage_history_c . ">>" . ">> <b style=\"color:red;\">Date:</b> " . $date . " <b style=\"color:red;\">Time:</b> " . $time . ">> <b style=\"color:blue;\"> COE Recieved" . " <a href=\'" . $loc2 . "\'>View File</a><br>";
 
 
         }
