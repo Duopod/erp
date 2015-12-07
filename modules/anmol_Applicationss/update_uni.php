@@ -10,6 +10,8 @@ class update_uni
 
     public function uni($bean, $event, $arguments)
     {
+        // Alerts
+        alert("Upload zip files only! Less than 9 MB");
 // File Operations
         // Check File Size
         $f_size = $_FILES['filename_file']['size'];

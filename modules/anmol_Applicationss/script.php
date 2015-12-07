@@ -17,10 +17,7 @@ class script
             (function ($) {
                 $(document).ready(function () {
 
-                    // Alerts
-                    alert("Upload zip files only! Less than 9 MB");
-
-//Disable Fields
+                    //Disable Fields
                     $('#assigned_user_name').attr("disabled", "true");
                     $('#anmol_course_search_anmol_applicationss_2_name').attr("disabled", "true");
                     $('#contacts_anmol_applicationss_1_name').attr("disabled", "true");
