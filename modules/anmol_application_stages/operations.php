@@ -47,8 +47,8 @@ class operations
             $uni_mail = $bean->uni_email_save_c;
             $mime_type = $bean->file_mime_type;
             $filename = "New_Application_" . $application_name . ".zip";
-            $file_location = "upload/" . $id;
-            $subject = "SIEC Education " . $bean->email_subject_c . $application_name;
+            $file_location = "/home/admin/web/siecindia.com/public_html/upload/" . $id;
+            $subject = "SIEC Education " . $bean->email_subject_c . " " . $application_name;
 
             $body = $body_stage1;
             $email = $uni_mail;
@@ -67,6 +67,7 @@ class operations
             $mail->AddCC($copy_to_email);
             $mail->AddAddress($email, $name_to);
             $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);
+            @$mail->Send();
 
             // Moving the file to the new location
 
@@ -87,8 +88,6 @@ class operations
                 $bean->filename = ""; // Reset the Upload Button
             }
 
-
-            @$mail->Send();
 
             $bean->app_sent_to_uni_c = "1";
             // Add Comment in App Stage History that the application has been Forwarded.
@@ -125,7 +124,7 @@ class operations
             $body_stage1 = $bean->email_body_c;
             $mime_type = $bean->file_mime_type;
             $filename = "Pendency_Update_Stage1_" . $application_name . ".zip";
-            $file_location = "upload/" . $id;
+            $file_location = "/home/admin/web/siecindia.com/public_html/upload/" . $id;
             $subject = $subject_stage1;
             $body = $body_stage1;
             $email = $bean->uni_email_save_c;
@@ -144,6 +143,7 @@ class operations
             $mail->AddCC($copy_to_email);
             $mail->AddAddress($email, $name_to);
             $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);
+            @$mail->Send();
 
             // Moving the file to the new location
 
@@ -166,7 +166,6 @@ class operations
             }
 
 // Sent Email
-            @$mail->Send();
 
 
             //  $bean->app_sent_to_uni_c = "11";
@@ -258,7 +257,7 @@ class operations
 
             $mime_type = $bean->file_mime_type;
             $filename = "Application_Finance_Docs_Stage2_" . $application_name . ".zip";
-            $file_location = "upload/" . $id;
+            $file_location = "/home/admin/web/siecindia.com/public_html/upload/" . $id;
             $subject = $subject_stage1;
             $body = $body_stage1;
             $email = $bean->uni_email_save_c;
@@ -277,6 +276,7 @@ class operations
             $mail->AddCC($copy_to_email);
             $mail->AddAddress($email, $name_to);
             $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);
+            @$mail->Send();
 
             // Moving the file to the new location
 
@@ -296,7 +296,6 @@ class operations
             } else {
                 $bean->filename = ""; // Reset the Upload Button
             }
-            @$mail->Send();
 
 
             $bean->app_sent_to_uni_c = "2";
