@@ -8,3 +8,5 @@
 
 
 $dictionary['anmol_Applicationss']['fields']['anmol_course_search_anmol_applicationss_2_name']['required'] = true;  /// Making it Required
+
+$dictionary['anmol_Applicationss']['fields']['contacts_anmol_applicationss_1_name']['required'] = true;  /// Making it Required
