@@ -12,6 +12,30 @@ class operations
     public function operations($bean, $event, $arguments)
     {
 
+// File Operations
+        // Check File Size
+        $f_size = $_FILES['filename_file']['size'];
+
+        if ($f_size > 9000000) {
+            die("File Size Should be less than 9MB");
+        }
+        // First check if the File is Selected or no
+        $f_name = $bean->filename;
+
+        if ($f_name == "") {
+            die("Error: File not Selected!");
+        };
+        // Check File Extension Zip or No
+        $f_extn = explode(".", $f_name);
+
+        if ($f_extn[1] != "zip") {
+            die("Error: Please Upload Zip Files Only!");
+        }
+
+
+        //**********************************************************
+        $copy_to_email = "andy228448@gmail.com";
+
         $id = $bean->id;
         $lead_name = $bean->fetched_rel_row['contacts_anmol_application_stages_1_name'];
         $application_name = $bean->fetched_rel_row['anmol_applicationss_anmol_application_stages_1_name'];
@@ -63,7 +87,6 @@ class operations
             $mail->Body = $body;
             $mail->prepForOutbound();
             $name_to = "University";
-            $copy_to_email = "andy228448@gmail.com";
             $mail->AddCC($copy_to_email);
             $mail->AddAddress($email, $name_to);
             $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);
@@ -141,7 +164,6 @@ class operations
             $mail->Body = $body;
             $mail->prepForOutbound();
             $name_to = "University";
-            $copy_to_email = "andy228448@gmail.com";
             $mail->AddCC($copy_to_email);
             $mail->AddAddress($email, $name_to);
             $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);
@@ -274,7 +296,6 @@ class operations
             $mail->Body = $body;
             $mail->prepForOutbound();
             $name_to = "University";
-            $copy_to_email = "andy228448@gmail.com";
             $mail->AddCC($copy_to_email);
             $mail->AddAddress($email, $name_to);
             $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);
@@ -347,7 +368,6 @@ class operations
             $mail->Body = $body;
             $mail->prepForOutbound();
             $name_to = "University";
-            $copy_to_email = "andy228448@gmail.com";
             $mail->AddCC($copy_to_email);
             $mail->AddAddress($email, $name_to);
             $mail->AddAttachment($file_location, $filename, 'base64', $mime_type);

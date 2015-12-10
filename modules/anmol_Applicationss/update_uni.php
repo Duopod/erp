@@ -34,6 +34,7 @@ class update_uni
 
 
         //**********************************************************
+
         $course_id = $bean->anmol_course_search_anmol_applicationss_2anmol_course_search_ida;
         $id = $bean->id;
         // die($id);

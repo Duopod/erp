@@ -40,7 +40,7 @@ function customSaveFunction() {
         } else {
         }
 // Prevent Past Dates
-        if (set_date < now) {
+        if (set_date <= now) {
             isOK = false;
             alert("You cannot set a date in the Past!");   // Display Error
             return false;

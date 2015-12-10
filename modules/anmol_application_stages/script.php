@@ -221,6 +221,7 @@ class script
 
                                         $('#uni_email_c').val("No Email in Database Please contact Admin");
                                         alert("This application is a Manual Application! Save the application only After Sending the Application Manually on the respective Portals!");
+                                        return false;
                                     }
                                     else {
                                         $('#uni_email_c').attr("value", data);
@@ -321,9 +322,9 @@ class script
                         }
 
 
-                        if ($("#application_stage_c").val() == "stage2") {
+                        if ($("#application_stage_c").val() == "stage_2") {
 
-                            alert("Upload the Conditional Offer Letter");
+                            alert("Upload the Financial Docs to Send to the Uni");
 
                             $('#filename_label').parent().css("display", "table-row");
                             $('#email_subject_stage2_c_label').parent().css("display", "table-row");
