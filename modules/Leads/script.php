@@ -11,7 +11,7 @@ class script_branch
     public function script($event, $arguments)
     {
 
-
+//
         //print_r($_SESSION);
         global $current_user;
 
