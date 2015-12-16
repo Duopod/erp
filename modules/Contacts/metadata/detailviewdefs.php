@@ -211,6 +211,10 @@ $viewdefs ['Contacts'] =
                                                 'comment' => 'The birthdate of the contact',
                                                 'label' => 'LBL_BIRTHDATE',
                                             ),
+                                        1 =>
+                                            array(
+                                                'name' => 'fp_event_locations_contacts_1_name',
+                                            ),
                                     ),
                             ),
                         'lbl_editview_panel9' =>
@@ -247,7 +251,6 @@ $viewdefs ['Contacts'] =
                                                 'studio' => 'visible',
                                                 'label' => 'LBL_CONTACT_ADDRESS',
                                             ),
-                                        1 => '',
                                     ),
                                 2 =>
                                     array(
@@ -275,7 +278,6 @@ $viewdefs ['Contacts'] =
                                                 'studio' => 'visible',
                                                 'label' => 'LBL_MARKETING_ACTIVITY_TYPE',
                                             ),
-                                        1 => '',
                                     ),
                                 1 =>
                                     array(
@@ -284,7 +286,6 @@ $viewdefs ['Contacts'] =
                                                 'name' => 'campaign_name',
                                                 'label' => 'LBL_CAMPAIGN',
                                             ),
-                                        1 => '',
                                     ),
                                 2 =>
                                     array(
@@ -294,7 +295,6 @@ $viewdefs ['Contacts'] =
                                                 'studio' => 'visible',
                                                 'label' => 'LBL_LEAD_SCORE',
                                             ),
-                                        1 => '',
                                     ),
                             ),
                         'lbl_editview_panel2' =>
@@ -307,7 +307,6 @@ $viewdefs ['Contacts'] =
                                                 'studio' => 'visible',
                                                 'label' => 'LBL_LAST_QUALIFICATION',
                                             ),
-                                        1 => '',
                                     ),
                                 1 =>
                                     array(
@@ -316,7 +315,6 @@ $viewdefs ['Contacts'] =
                                                 'name' => 'last_qualification_name_c',
                                                 'label' => 'LBL_LAST_QUALIFICATION_NAME',
                                             ),
-                                        1 => '',
                                     ),
                                 2 =>
                                     array(
@@ -326,7 +324,6 @@ $viewdefs ['Contacts'] =
                                                 'studio' => 'visible',
                                                 'label' => 'LBL_LAST_YEAR_OF_QUALIFICATION',
                                             ),
-                                        1 => '',
                                     ),
                             ),
                         'lbl_editview_panel5' =>
@@ -350,10 +347,7 @@ $viewdefs ['Contacts'] =
                         'lbl_editview_panel4' =>
                             array(
                                 0 =>
-                                    array(
-                                        0 => '',
-                                        1 => '',
-                                    ),
+                                    array(),
                             ),
                         'lbl_editview_panel1' =>
                             array(
@@ -380,7 +374,6 @@ $viewdefs ['Contacts'] =
                                                 'studio' => 'visible',
                                                 'label' => 'LBL_COUNTRY_INTERESTED_IN',
                                             ),
-                                        1 => '',
                                     ),
                                 2 =>
                                     array(
@@ -407,7 +400,6 @@ $viewdefs ['Contacts'] =
                                                 'name' => 'assigned_user_name',
                                                 'label' => 'LBL_ASSIGNED_TO_NAME',
                                             ),
-                                        1 => '',
                                     ),
                             ),
                         'lbl_editview_panel8' =>
@@ -421,64 +413,9 @@ $viewdefs ['Contacts'] =
                                                 'label' => 'LBL_REMARK_HISTORY',
                                                 'customCode' => '{$fields.remark_history_c.value|escape:\'htmlentitydecode\' |escape:\'html\'|strip_tags|url2html|nl2br}',
                                             ),
-                                        1 => '',
                                     ),
                             ),
                     ),
             ),
     );
 ?>
-<script>
-    (function ($) {
-        $(document).ready(function () {
-
-            $('#contacts_anmol_applications_1_create_button').click(function () {
-
-
-                /************ This adds a Dialogue box*/
-
-                $(function () {
-                    $("#dialog222").dialog();
-                });
-
-                /*************************/
-
-                var origAppend = $.fn.append;
-
-                $.fn.append = function () {
-                    return origAppend.apply(this, arguments).trigger("append");
-                };
-
-
-                $("div").bind("append", function () {
-
-                    $("#btn_assigned_user_name,#btn_clr_assigned_user_name").css("display", "none");
-                    $('#assigned_user_name').attr("disabled", "true");
-
-                    // alert('Hello, world!');
-
-                });
-
-
-            });
-
-            //	$("#campaign_name,#Contacts0emailAddress0").attr("disabled","true");
-            //				$("#btn_campaign_name,#btn_clr_campaign_name,#birthdate_trigger,#btn_assigned_user_name,#btn_clr_assigned_user_name").css("display","none");
-
-            /*$('#lead_conv_ac_op').css("display","none");        // Hide the Copy Activities to panel while converting
-
-             $('#newContacts').css("display","none");
-             $("#btn_campaign_name,#btn_report_to_name,#btn_clr_report_to_name").css("display","none");
-             $( "td:contains('Create Contact')" ).css("display","none");
-             $( "td:contains('Select Contact')" ).css("display","none");*/
-
-
-        })
-    })(jQuery)
-</script>
-
-
-<div style="display:none;" id="dialog222" title="SIEC Tip">
-    <p>A new Application is being created. Select a course to Add the Application. After Saving the Application, click
-        on the Application to upload Documents.</p>
-</div>

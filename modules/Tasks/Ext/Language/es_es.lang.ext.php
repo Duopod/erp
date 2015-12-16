@@ -2,10 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
-//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
-$mod_strings['LBL_ANMOL_APPLICATIONSS_TASKS_1_FROM_ANMOL_APPLICATIONSS_TITLE'] = 'Applicationss';
-
-
 
 $mod_strings = array_merge($mod_strings,
     array(
@@ -13,5 +9,8 @@ $mod_strings = array_merge($mod_strings,
     )
 );
 
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_ANMOL_APPLICATIONSS_TASKS_1_FROM_ANMOL_APPLICATIONSS_TITLE'] = 'Applicationss';
 
 ?>

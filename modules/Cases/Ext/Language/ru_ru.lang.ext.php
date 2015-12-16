@@ -49,7 +49,14 @@ $mod_strings['LBL_AOP_CASE_EVENTS'] = 'События обращения';
  *
  * @author Salesagility Ltd <support@salesagility.com>
  */
-$mod_strings['LBL_AOP_CASE_EVENTS'] = 'События обращения';
+$mod_strings['LBL_UPDATE_TEXT'] = 'Текст обновления';
+$mod_strings['LBL_INTERNAL'] = 'Внутреннее обновление';
+$mod_strings['LBL_AOP_CASE_UPDATES'] = 'Обновления обращения';
+$mod_strings['LBL_AOP_CASE_UPDATES_THREADED'] = 'Обновления обращения опубликованы';
+$mod_strings['LBL_CASE_UPDATES_COLLAPSE_ALL'] = 'Свернуть все';
+$mod_strings['LBL_CASE_UPDATES_EXPAND_ALL'] = 'Развернуть все';
+$mod_strings['LBL_NO_CASE_UPDATES'] = "Для данного обращения нет обновлений";
+$mod_strings['LBL_AOP_CASE_ATTACHMENTS'] = 'Вложения: ';  
 
 
 /**
@@ -74,13 +81,6 @@ $mod_strings['LBL_AOP_CASE_EVENTS'] = 'События обращения';
  *
  * @author Salesagility Ltd <support@salesagility.com>
  */
-$mod_strings['LBL_UPDATE_TEXT'] = 'Текст обновления';
-$mod_strings['LBL_INTERNAL'] = 'Внутреннее обновление';
-$mod_strings['LBL_AOP_CASE_UPDATES'] = 'Обновления обращения';
-$mod_strings['LBL_AOP_CASE_UPDATES_THREADED'] = 'Обновления обращения опубликованы';
-$mod_strings['LBL_CASE_UPDATES_COLLAPSE_ALL'] = 'Свернуть все';
-$mod_strings['LBL_CASE_UPDATES_EXPAND_ALL'] = 'Развернуть все';
-$mod_strings['LBL_NO_CASE_UPDATES'] = "Для данного обращения нет обновлений";
-$mod_strings['LBL_AOP_CASE_ATTACHMENTS'] = 'Вложения: ';  
+$mod_strings['LBL_AOP_CASE_EVENTS'] = 'События обращения';
 
 ?>

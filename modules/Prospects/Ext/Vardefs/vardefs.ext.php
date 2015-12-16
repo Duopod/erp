@@ -2,6 +2,11 @@
  //WARNING: The contents of this file are auto-generated
 
 
+// created: 2015-08-22 13:16:04
+$dictionary['Prospect']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
+
+
+
 // created: 2013-04-30 14:55:07
 $dictionary["Prospect"]["fields"]["fp_events_prospects_1"] = array(
     'name' => 'fp_events_prospects_1',
@@ -10,22 +15,6 @@ $dictionary["Prospect"]["fields"]["fp_events_prospects_1"] = array(
     'source' => 'non-db',
     'vname' => 'LBL_FP_EVENTS_PROSPECTS_1_FROM_FP_EVENTS_TITLE',
 );
-
-
-
-$dictionary['Prospect']['fields']['SecurityGroups'] = array(
-    'name' => 'SecurityGroups',
-    'type' => 'link',
-    'relationship' => 'securitygroups_prospects',
-    'module' => 'SecurityGroups',
-    'bean_name' => 'SecurityGroup',
-    'source' => 'non-db',
-    'vname' => 'LBL_SECURITYGROUPS',
-);
-
-
-
-
 
 
 
@@ -105,23 +94,27 @@ $dictionary['Prospect']['fields']['event_status_id'] =
         'studio' => array('listview' => false),
     );
 
-// created: 2015-08-22 13:16:06
-$dictionary['Prospect']['fields']['jjwg_maps_address_c']['inline_edit'] = 1;
-
-
-
 // created: 2015-08-22 13:16:05
 $dictionary['Prospect']['fields']['jjwg_maps_geocode_status_c']['inline_edit'] = 1;
 
+
+// created: 2015-08-22 13:16:06
+$dictionary['Prospect']['fields']['jjwg_maps_address_c']['inline_edit'] = 1;
 
 
 // created: 2015-08-22 13:16:04
 $dictionary['Prospect']['fields']['jjwg_maps_lat_c']['inline_edit'] = 1;
 
 
-
-// created: 2015-08-22 13:16:04
-$dictionary['Prospect']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
+$dictionary['Prospect']['fields']['SecurityGroups'] = array(
+    'name' => 'SecurityGroups',
+    'type' => 'link',
+    'relationship' => 'securitygroups_prospects',
+    'module' => 'SecurityGroups',
+    'bean_name' => 'SecurityGroup',
+    'source' => 'non-db',
+    'vname' => 'LBL_SECURITYGROUPS',
+);
 
 
 ?>

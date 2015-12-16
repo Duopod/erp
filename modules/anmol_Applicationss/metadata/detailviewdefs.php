@@ -70,6 +70,10 @@ array (
             'name' => 'filename',
             'label' => 'LBL_FILENAME',
           ),
+            1 =>
+                array(
+                    'name' => 'fp_event_locations_anmol_applicationss_1_name',
+                ),
         ),
       ),
     ),

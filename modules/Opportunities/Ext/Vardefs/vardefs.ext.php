@@ -2,39 +2,24 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2015-08-30 13:15:31
-$dictionary["Opportunity"]["fields"]["anmol_applications_opportunities_1"] = array(
-    'name' => 'anmol_applications_opportunities_1',
-    'type' => 'link',
-    'relationship' => 'anmol_applications_opportunities_1',
-    'source' => 'non-db',
-    'module' => 'anmol_Applications',
-    'bean_name' => 'anmol_Applications',
-    'vname' => 'LBL_ANMOL_APPLICATIONS_OPPORTUNITIES_1_FROM_ANMOL_APPLICATIONS_TITLE',
-    'id_name' => 'anmol_applications_opportunities_1anmol_applications_ida',
-);
-$dictionary["Opportunity"]["fields"]["anmol_applications_opportunities_1_name"] = array(
-    'name' => 'anmol_applications_opportunities_1_name',
-    'type' => 'relate',
-    'source' => 'non-db',
-    'vname' => 'LBL_ANMOL_APPLICATIONS_OPPORTUNITIES_1_FROM_ANMOL_APPLICATIONS_TITLE',
-    'save' => true,
-    'id_name' => 'anmol_applications_opportunities_1anmol_applications_ida',
-    'link' => 'anmol_applications_opportunities_1',
-    'table' => 'anmol_applications',
-    'module' => 'anmol_Applications',
-    'rname' => 'name',
-);
-$dictionary["Opportunity"]["fields"]["anmol_applications_opportunities_1anmol_applications_ida"] = array(
-    'name' => 'anmol_applications_opportunities_1anmol_applications_ida',
-    'type' => 'link',
-    'relationship' => 'anmol_applications_opportunities_1',
-    'source' => 'non-db',
-    'reportable' => false,
-    'side' => 'right',
-    'vname' => 'LBL_ANMOL_APPLICATIONS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE',
-);
+// created: 2015-08-22 13:15:53
+$dictionary['Opportunity']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
 
+
+// created: 2015-09-16 11:34:43
+$dictionary['Opportunity']['fields']['application_stage_c']['inline_edit'] = '';
+$dictionary['Opportunity']['fields']['application_stage_c']['labelValue'] = 'Application Stage';
+
+
+// created: 2015-09-16 11:24:43
+$dictionary['Opportunity']['fields']['sales_stage']['default'] = 'Prospecting';
+$dictionary['Opportunity']['fields']['sales_stage']['len'] = 100;
+$dictionary['Opportunity']['fields']['sales_stage']['required'] = false;
+$dictionary['Opportunity']['fields']['sales_stage']['inline_edit'] = true;
+$dictionary['Opportunity']['fields']['sales_stage']['comments'] = 'Indication of progression towards closure';
+$dictionary['Opportunity']['fields']['sales_stage']['merge_filter'] = 'disabled';
+
+ 
 
 $dictionary["Opportunity"]["fields"]["aos_quotes"] = array(
     'name' => 'aos_quotes',
@@ -75,6 +60,25 @@ $dictionary["Opportunity"]["relationships"]["opportunity_aos_contracts"] = array
 );
 
 
+$dictionary['Opportunity']['fields']['SecurityGroups'] = array(
+    'name' => 'SecurityGroups',
+    'type' => 'link',
+    'relationship' => 'securitygroups_opportunities',
+    'module' => 'SecurityGroups',
+    'bean_name' => 'SecurityGroup',
+    'source' => 'non-db',
+    'vname' => 'LBL_SECURITYGROUPS',
+);
+
+
+// created: 2015-08-22 13:15:56
+$dictionary['Opportunity']['fields']['jjwg_maps_geocode_status_c']['inline_edit'] = 1;
+
+
+// created: 2015-08-22 13:15:57
+$dictionary['Opportunity']['fields']['jjwg_maps_address_c']['inline_edit'] = 1;
+
+
 
 /**
  * Created by PhpStorm.
@@ -89,6 +93,50 @@ $dictionary['anmol_application_stages']['fields']['file_mime_type'] = array(
     'len' => '100',
     'importable' => false,
 );
+
+// created: 2015-08-30 13:15:31
+$dictionary["Opportunity"]["fields"]["anmol_applications_opportunities_1"] = array(
+    'name' => 'anmol_applications_opportunities_1',
+    'type' => 'link',
+    'relationship' => 'anmol_applications_opportunities_1',
+    'source' => 'non-db',
+    'module' => 'anmol_Applications',
+    'bean_name' => 'anmol_Applications',
+    'vname' => 'LBL_ANMOL_APPLICATIONS_OPPORTUNITIES_1_FROM_ANMOL_APPLICATIONS_TITLE',
+    'id_name' => 'anmol_applications_opportunities_1anmol_applications_ida',
+);
+$dictionary["Opportunity"]["fields"]["anmol_applications_opportunities_1_name"] = array(
+    'name' => 'anmol_applications_opportunities_1_name',
+    'type' => 'relate',
+    'source' => 'non-db',
+    'vname' => 'LBL_ANMOL_APPLICATIONS_OPPORTUNITIES_1_FROM_ANMOL_APPLICATIONS_TITLE',
+    'save' => true,
+    'id_name' => 'anmol_applications_opportunities_1anmol_applications_ida',
+    'link' => 'anmol_applications_opportunities_1',
+    'table' => 'anmol_applications',
+    'module' => 'anmol_Applications',
+    'rname' => 'name',
+);
+$dictionary["Opportunity"]["fields"]["anmol_applications_opportunities_1anmol_applications_ida"] = array(
+    'name' => 'anmol_applications_opportunities_1anmol_applications_ida',
+    'type' => 'link',
+    'relationship' => 'anmol_applications_opportunities_1',
+    'source' => 'non-db',
+    'reportable' => false,
+    'side' => 'right',
+    'vname' => 'LBL_ANMOL_APPLICATIONS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE',
+);
+
+
+// created: 2015-09-16 11:24:19
+$dictionary['Opportunity']['fields']['amount']['required'] = false;
+$dictionary['Opportunity']['fields']['amount']['inline_edit'] = true;
+$dictionary['Opportunity']['fields']['amount']['comments'] = 'Unconverted amount of the opportunity';
+$dictionary['Opportunity']['fields']['amount']['duplicate_merge'] = 'enabled';
+$dictionary['Opportunity']['fields']['amount']['duplicate_merge_dom_value'] = '1';
+$dictionary['Opportunity']['fields']['amount']['merge_filter'] = 'disabled';
+
+ 
 
 /**
  * Created by PhpStorm.
@@ -124,65 +172,8 @@ $dictionary['Opportunities']['fields']['filename'] = array(
     'importable' => false,
 );
 
-
-$dictionary['Opportunity']['fields']['SecurityGroups'] = array(
-    'name' => 'SecurityGroups',
-    'type' => 'link',
-    'relationship' => 'securitygroups_opportunities',
-    'module' => 'SecurityGroups',
-    'bean_name' => 'SecurityGroup',
-    'source' => 'non-db',
-    'vname' => 'LBL_SECURITYGROUPS',
-);
-
-
-
-
-
-
- // created: 2015-09-16 11:24:19
-$dictionary['Opportunity']['fields']['amount']['required']=false;
-$dictionary['Opportunity']['fields']['amount']['inline_edit']=true;
-$dictionary['Opportunity']['fields']['amount']['comments']='Unconverted amount of the opportunity';
-$dictionary['Opportunity']['fields']['amount']['duplicate_merge']='enabled';
-$dictionary['Opportunity']['fields']['amount']['duplicate_merge_dom_value']='1';
-$dictionary['Opportunity']['fields']['amount']['merge_filter']='disabled';
-
- 
-
- // created: 2015-09-16 11:34:43
-$dictionary['Opportunity']['fields']['application_stage_c']['inline_edit']='';
-$dictionary['Opportunity']['fields']['application_stage_c']['labelValue']='Application Stage';
-
- 
-
-// created: 2015-08-22 13:15:57
-$dictionary['Opportunity']['fields']['jjwg_maps_address_c']['inline_edit'] = 1;
-
-
-
-// created: 2015-08-22 13:15:56
-$dictionary['Opportunity']['fields']['jjwg_maps_geocode_status_c']['inline_edit'] = 1;
-
-
-
 // created: 2015-08-22 13:15:54
 $dictionary['Opportunity']['fields']['jjwg_maps_lat_c']['inline_edit'] = 1;
 
 
-
-// created: 2015-08-22 13:15:53
-$dictionary['Opportunity']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
-
-
-
- // created: 2015-09-16 11:24:43
-$dictionary['Opportunity']['fields']['sales_stage']['default']='Prospecting';
-$dictionary['Opportunity']['fields']['sales_stage']['len']=100;
-$dictionary['Opportunity']['fields']['sales_stage']['required']=false;
-$dictionary['Opportunity']['fields']['sales_stage']['inline_edit']=true;
-$dictionary['Opportunity']['fields']['sales_stage']['comments']='Indication of progression towards closure';
-$dictionary['Opportunity']['fields']['sales_stage']['merge_filter']='disabled';
-
- 
 ?>

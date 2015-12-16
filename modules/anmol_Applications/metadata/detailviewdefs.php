@@ -70,6 +70,13 @@ $viewdefs [$module_name] =
                                                 'name' => 'anmol_course_search_anmol_applications_1_name',
                                             ),
                                     ),
+                                4 =>
+                                    array(
+                                        0 =>
+                                            array(
+                                                'name' => 'fp_event_locations_anmol_applications_1_name',
+                                            ),
+                                    ),
                             ),
                     ),
             ),

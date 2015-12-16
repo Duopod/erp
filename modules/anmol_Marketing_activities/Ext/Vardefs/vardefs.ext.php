@@ -2,6 +2,12 @@
  //WARNING: The contents of this file are auto-generated
 
 
+// created: 2015-09-05 19:17:51
+$dictionary['anmol_Marketing_activities']['fields']['marketing_activity_type_c']['inline_edit'] = '1';
+$dictionary['anmol_Marketing_activities']['fields']['marketing_activity_type_c']['labelValue'] = 'Marketing Activity Type';
+
+
+
 // created: 2015-09-05 14:48:06
 $dictionary["anmol_Marketing_activities"]["fields"]["anmol_marketing_campaigns_anmol_marketing_activities"] = array(
     'name' => 'anmol_marketing_campaigns_anmol_marketing_activities',
@@ -34,11 +40,5 @@ $dictionary["anmol_Marketing_activities"]["fields"]["anmol_mark980bmpaigns_ida"]
     'side' => 'right',
     'vname' => 'LBL_ANMOL_MARKETING_CAMPAIGNS_ANMOL_MARKETING_ACTIVITIES_FROM_ANMOL_MARKETING_ACTIVITIES_TITLE',
 );
-
-
-// created: 2015-09-05 19:17:51
-$dictionary['anmol_Marketing_activities']['fields']['marketing_activity_type_c']['inline_edit'] = '1';
-$dictionary['anmol_Marketing_activities']['fields']['marketing_activity_type_c']['labelValue'] = 'Marketing Activity Type';
-
 
 ?>

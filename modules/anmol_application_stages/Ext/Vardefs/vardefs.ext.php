@@ -2,6 +2,68 @@
  //WARNING: The contents of this file are auto-generated
 
 
+// created: 2015-09-17 17:21:23
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_c']['labelValue'] = 'pendency stage 0 subject';
+
+
+// created: 2015-09-21 09:55:43
+$dictionary['anmol_application_stages']['fields']['conditional_offer_c']['inline_edit'] = '';
+$dictionary['anmol_application_stages']['fields']['conditional_offer_c']['labelValue'] = 'Conditional Offer?';
+
+
+// created: 2015-09-17 17:22:57
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_du__c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_du__c']['labelValue'] = 'pendency stage 0 subject du';
+
+
+// created: 2015-09-17 15:02:33
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_c']['labelValue'] = 'pendency stage 0';
+
+
+// created: 2015-09-25 00:06:20
+$dictionary['anmol_application_stages']['fields']['application_stage_c']['inline_edit'] = '';
+$dictionary['anmol_application_stages']['fields']['application_stage_c']['labelValue'] = 'Application Stage';
+
+
+// created: 2015-09-17 14:58:45
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_c']['labelValue'] = 'Enter Pendency Remark (Stg 1)';
+
+
+// created: 2015-09-21 09:59:38
+$dictionary['anmol_application_stages']['fields']['unchecked_docs_c']['inline_edit'] = '';
+$dictionary['anmol_application_stages']['fields']['unchecked_docs_c']['labelValue'] = 'Pending Docs';
+
+
+// created: 2015-09-17 17:10:58
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_du_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_du_c']['labelValue'] = 'pendency stage 1 subject du';
+
+
+// created: 2015-09-25 12:22:43
+$dictionary['anmol_application_stages']['fields']['email_subject_stage2_c']['inline_edit'] = '';
+$dictionary['anmol_application_stages']['fields']['email_subject_stage2_c']['labelValue'] = 'email subject stage2';
+
+
+// created: 2015-09-16 22:34:30
+$dictionary['anmol_application_stages']['fields']['filename']['inline_edit'] = true;
+$dictionary['anmol_application_stages']['fields']['filename']['importable'] = 'true';
+$dictionary['anmol_application_stages']['fields']['filename']['merge_filter'] = 'disabled';
+
+
+// created: 2015-09-16 15:21:32
+$dictionary['anmol_application_stages']['fields']['application_stage_history_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['application_stage_history_c']['labelValue'] = 'Application History';
+
+
+// created: 2015-09-22 22:34:04
+$dictionary['anmol_application_stages']['fields']['app_sent_to_uni_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['app_sent_to_uni_c']['labelValue'] = 'app sent to uni';
+
+ 
+
 // created: 2015-09-16 13:05:15
 $dictionary["anmol_application_stages"]["fields"]["anmol_applicationss_anmol_application_stages_1"] = array (
   'name' => 'anmol_applicationss_anmol_application_stages_1',
@@ -36,6 +98,40 @@ $dictionary["anmol_application_stages"]["fields"]["anmol_appl021dationss_ida"] =
 );
 
 
+// created: 2015-12-16 12:20:06
+$dictionary["anmol_application_stages"]["fields"]["fp_event_locations_anmol_application_stages_1"] = array(
+    'name' => 'fp_event_locations_anmol_application_stages_1',
+    'type' => 'link',
+    'relationship' => 'fp_event_locations_anmol_application_stages_1',
+    'source' => 'non-db',
+    'module' => 'FP_Event_Locations',
+    'bean_name' => 'FP_Event_Locations',
+    'vname' => 'LBL_FP_EVENT_LOCATIONS_ANMOL_APPLICATION_STAGES_1_FROM_FP_EVENT_LOCATIONS_TITLE',
+    'id_name' => 'fp_event_l5a9acations_ida',
+);
+$dictionary["anmol_application_stages"]["fields"]["fp_event_locations_anmol_application_stages_1_name"] = array(
+    'name' => 'fp_event_locations_anmol_application_stages_1_name',
+    'type' => 'relate',
+    'source' => 'non-db',
+    'vname' => 'LBL_FP_EVENT_LOCATIONS_ANMOL_APPLICATION_STAGES_1_FROM_FP_EVENT_LOCATIONS_TITLE',
+    'save' => true,
+    'id_name' => 'fp_event_l5a9acations_ida',
+    'link' => 'fp_event_locations_anmol_application_stages_1',
+    'table' => 'fp_event_locations',
+    'module' => 'FP_Event_Locations',
+    'rname' => 'name',
+);
+$dictionary["anmol_application_stages"]["fields"]["fp_event_l5a9acations_ida"] = array(
+    'name' => 'fp_event_l5a9acations_ida',
+    'type' => 'link',
+    'relationship' => 'fp_event_locations_anmol_application_stages_1',
+    'source' => 'non-db',
+    'reportable' => false,
+    'side' => 'right',
+    'vname' => 'LBL_FP_EVENT_LOCATIONS_ANMOL_APPLICATION_STAGES_1_FROM_ANMOL_APPLICATION_STAGES_TITLE',
+);
+
+
 // created: 2015-09-24 15:35:09
 $dictionary["anmol_application_stages"]["fields"]["anmol_application_stages_anmol_docscollection_1"] = array (
   'name' => 'anmol_application_stages_anmol_docscollection_1',
@@ -48,6 +144,12 @@ $dictionary["anmol_application_stages"]["fields"]["anmol_application_stages_anmo
   'vname' => 'LBL_ANMOL_APPLICATION_STAGES_ANMOL_DOCSCOLLECTION_1_FROM_ANMOL_DOCSCOLLECTION_TITLE',
 );
 
+
+// created: 2015-09-22 21:58:40
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_dummy_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_dummy_c']['labelValue'] = 'pendency stage 1 dummy';
+
+ 
 
 // created: 2015-09-24 16:00:34
 $dictionary["anmol_application_stages"]["fields"]["anmol_docscollection_anmol_application_stages_1"] = array (
@@ -82,6 +184,17 @@ $dictionary["anmol_application_stages"]["fields"]["anmol_docs1beelection_ida"] =
   'vname' => 'LBL_ANMOL_DOCSCOLLECTION_ANMOL_APPLICATION_STAGES_1_FROM_ANMOL_APPLICATION_STAGES_TITLE',
 );
 
+
+// created: 2015-09-24 10:16:50
+$dictionary['anmol_application_stages']['fields']['pendency_state_c']['inline_edit'] = '';
+$dictionary['anmol_application_stages']['fields']['pendency_state_c']['labelValue'] = 'pendency state';
+
+
+// created: 2015-09-16 21:49:21
+$dictionary['anmol_application_stages']['fields']['uni_email_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['uni_email_c']['labelValue'] = 'University Email';
+
+ 
 
 // created: 2015-09-21 22:38:54
 $dictionary["anmol_application_stages"]["fields"]["contacts_anmol_application_stages_1"] = array (
@@ -135,6 +248,22 @@ $dictionary['anmol_application_stages']['fields']['file_mime_type'] = array(
     'len' => '100',
     'importable' => false,
 );
+
+// created: 2015-09-17 17:09:35
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_c']['labelValue'] = 'pendency stage 1 subject';
+
+
+// created: 2015-09-21 22:51:22
+$dictionary['anmol_application_stages']['fields']['email_subject_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['email_subject_c']['labelValue'] = 'Email Subject';
+
+
+// created: 2015-09-17 16:51:01
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_dummy_c']['inline_edit'] = '1';
+$dictionary['anmol_application_stages']['fields']['pendency_stage_0_dummy_c']['labelValue'] = 'pendency stage 0 dummy';
+
+ 
 
 /**
  * Created by PhpStorm.
@@ -321,29 +450,9 @@ $dictionary['anmol_application_stages']['fields']['filename5'] = array(
 );*/
 
 
-
-
- // created: 2015-09-25 00:06:20
-$dictionary['anmol_application_stages']['fields']['application_stage_c']['inline_edit']='';
-$dictionary['anmol_application_stages']['fields']['application_stage_c']['labelValue']='Application Stage';
-
- 
-
- // created: 2015-09-16 15:21:32
-$dictionary['anmol_application_stages']['fields']['application_stage_history_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['application_stage_history_c']['labelValue']='Application History';
-
- 
-
- // created: 2015-09-22 22:34:04
-$dictionary['anmol_application_stages']['fields']['app_sent_to_uni_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['app_sent_to_uni_c']['labelValue']='app sent to uni';
-
- 
-
- // created: 2015-09-21 09:55:43
-$dictionary['anmol_application_stages']['fields']['conditional_offer_c']['inline_edit']='';
-$dictionary['anmol_application_stages']['fields']['conditional_offer_c']['labelValue']='Conditional Offer?';
+// created: 2015-09-24 11:19:58
+$dictionary['anmol_application_stages']['fields']['uni_email_save_c']['inline_edit'] = '';
+$dictionary['anmol_application_stages']['fields']['uni_email_save_c']['labelValue'] = 'uni email save';
 
  
 
@@ -356,97 +465,6 @@ $dictionary['anmol_application_stages']['fields']['email_body_c']['labelValue']=
  // created: 2015-09-25 11:44:40
 $dictionary['anmol_application_stages']['fields']['email_body_stage2_c']['inline_edit']='';
 $dictionary['anmol_application_stages']['fields']['email_body_stage2_c']['labelValue']='email body stage2';
-
- 
-
- // created: 2015-09-21 22:51:22
-$dictionary['anmol_application_stages']['fields']['email_subject_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['email_subject_c']['labelValue']='Email Subject';
-
- 
-
- // created: 2015-09-25 12:22:43
-$dictionary['anmol_application_stages']['fields']['email_subject_stage2_c']['inline_edit']='';
-$dictionary['anmol_application_stages']['fields']['email_subject_stage2_c']['labelValue']='email subject stage2';
-
- 
-
- // created: 2015-09-16 22:34:30
-$dictionary['anmol_application_stages']['fields']['filename']['inline_edit']=true;
-$dictionary['anmol_application_stages']['fields']['filename']['importable']='true';
-$dictionary['anmol_application_stages']['fields']['filename']['merge_filter']='disabled';
-
- 
-
- // created: 2015-09-17 15:02:33
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_c']['labelValue']='pendency stage 0';
-
- 
-
- // created: 2015-09-17 16:51:01
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_dummy_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_dummy_c']['labelValue']='pendency stage 0 dummy';
-
- 
-
- // created: 2015-09-17 17:21:23
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_c']['labelValue']='pendency stage 0 subject';
-
- 
-
- // created: 2015-09-17 17:22:57
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_du__c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_0_subject_du__c']['labelValue']='pendency stage 0 subject du';
-
- 
-
- // created: 2015-09-17 14:58:45
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_c']['labelValue']='Enter Pendency Remark (Stg 1)';
-
- 
-
- // created: 2015-09-22 21:58:40
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_dummy_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_dummy_c']['labelValue']='pendency stage 1 dummy';
-
- 
-
- // created: 2015-09-17 17:09:35
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_c']['labelValue']='pendency stage 1 subject';
-
- 
-
- // created: 2015-09-17 17:10:58
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_du_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['pendency_stage_1_subject_du_c']['labelValue']='pendency stage 1 subject du';
-
- 
-
- // created: 2015-09-24 10:16:50
-$dictionary['anmol_application_stages']['fields']['pendency_state_c']['inline_edit']='';
-$dictionary['anmol_application_stages']['fields']['pendency_state_c']['labelValue']='pendency state';
-
- 
-
- // created: 2015-09-21 09:59:38
-$dictionary['anmol_application_stages']['fields']['unchecked_docs_c']['inline_edit']='';
-$dictionary['anmol_application_stages']['fields']['unchecked_docs_c']['labelValue']='Pending Docs';
-
- 
-
- // created: 2015-09-16 21:49:21
-$dictionary['anmol_application_stages']['fields']['uni_email_c']['inline_edit']='1';
-$dictionary['anmol_application_stages']['fields']['uni_email_c']['labelValue']='University Email';
-
- 
-
- // created: 2015-09-24 11:19:58
-$dictionary['anmol_application_stages']['fields']['uni_email_save_c']['inline_edit']='';
-$dictionary['anmol_application_stages']['fields']['uni_email_save_c']['labelValue']='uni email save';
 
  
 ?>

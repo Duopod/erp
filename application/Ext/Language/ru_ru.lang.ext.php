@@ -2,6 +2,16 @@
  //WARNING: The contents of this file are auto-generated
 
 
+$sugar_config['addAjaxBannedModules'][] = "asol_Reports";
+
+$app_list_strings['moduleList']['asol_Reports'] = 'Отчеты';
+
+$app_strings['LBL_DASHLET_REPORTCHART'] = 'AlineaSol Отчеты';
+$app_strings['LBL_DASHLET_REPORTCHART_DESC'] = 'AlineaSol Отчеты';
+$app_strings['LBL_DASHLET_REPORTCHART_REPORTID'] = 'Выбрать Отчет';
+
+
+
 /**
  * Advanced OpenWorkflow, Automating SugarCRM.
  * @package Advanced OpenWorkflow for SugarCRM
@@ -819,7 +829,7 @@ $app_list_strings['contact_portal_user_type_dom'] =
     array(
         'Single' => 'Указанный пользователь',
         'Account' => 'Учётная запись пользователя',
-    );
+    ); 
 
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by

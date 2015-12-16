@@ -2,6 +2,17 @@
  //WARNING: The contents of this file are auto-generated
 
 
+$sugar_config['addAjaxBannedModules'][] = "asol_Reports";
+
+$app_list_strings['moduleList']['asol_Reports'] = 'Informes';
+
+$app_strings['LBL_DASHLET_REPORTCHART'] = 'Informes AlineaSol';
+$app_strings['LBL_DASHLET_REPORTCHART_DESC'] = 'Informes AlineaSol';
+$app_strings['LBL_DASHLET_REPORTCHART_REPORTID'] = 'Selecciona Informe';
+
+
+
+
 $app_list_strings["moduleList"]["SecurityGroups"] = 'Administración de Grupos de Seguridad';
 $app_strings['LBL_LOGIN_AS'] = "Conexión como ";
 $app_strings['LBL_LOGOUT_AS'] = "Cerrar sesión como ";

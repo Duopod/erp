@@ -2,25 +2,28 @@
  //WARNING: The contents of this file are auto-generated
 
 
-//WARNING: The contents of this file are auto-generated
+$mod_strings = array_merge($mod_strings,
+    array(
+        'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => "Security Groups",
+    )
+);
 
 
 //THIS FILE IS AUTO GENERATED, DO NOT MODIFY
-$mod_strings['LBL_FP_EVENTS_LEADS_1_FROM_FP_EVENTS_TITLE'] = 'Events';
-
-
+$mod_strings['LBL_FP_EVENT_LOCATIONS_LEADS_1_FROM_FP_EVENT_LOCATIONS_TITLE'] = 'Branches';
+$mod_strings['LBL_ANMOL_MARKETING_CAMPAIGNS_LEADS_1_FROM_ANMOL_MARKETING_CAMPAIGNS_TITLE'] = 'Marketing Campaign';
 
 
 //THIS FILE IS AUTO GENERATED, DO NOT MODIFY
 $mod_strings['LBL_FP_EVENT_LOCATIONS_LEADS_1_FROM_FP_EVENT_LOCATIONS_TITLE'] = 'Branches';
 
 
+//WARNING: The contents of this file are auto-generated
 
-$mod_strings = array_merge($mod_strings,
-    array(
-        'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => "Security Groups",
-    )
-);
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_FP_EVENTS_LEADS_1_FROM_FP_EVENTS_TITLE'] = 'Events';
+
 
 
 ?>

@@ -26,6 +26,40 @@ $admin_option_defs['Administration']['asol_publishhomepage_export'] = array('aso
 $admin_group_header[] = array(translate('LBL_ASOL_PUBLISH_HOME_PAGE_TITLE', 'Home'), '', false, $admin_option_defs, translate('LBL_ASOL_PUBLISH_HOME_PAGE_PANEL_DESC', 'Home'));
 
 
+$admin_option_defs = array();
+$admin_option_defs['Administration']['asol_reports_validations'] = array('asol_Reports', translate('LBL_REPORT_CHECK_ACTION', 'asol_Reports'), translate('LBL_REPORT_CHECK_ACTION', 'asol_Reports'), './index.php?module=asol_Reports&action=CheckConfigurationDefs');
+
+//***********************//
+//***AlineaSol Premium***//
+//***********************//
+require_once("modules/asol_Reports/include_basic/reportsUtils.php");
+
+$adminFieldsPanel = asol_ReportsUtils::managePremiumFeature("reportFieldsManagement", "reportFunctions.php", "getReportFieldsManagementAdminPanel", null);
+if ($adminFieldsPanel !== false) {
+	$admin_option_defs['Administration']['asol_reports_field_management'] = $adminFieldsPanel;
+}
+
+$adminRelatesPanel = asol_ReportsUtils::managePremiumFeature("reportRelatesManagement", "reportFunctions.php", "getReportRelatesManagementAdminPanel", null);
+if ($adminRelatesPanel !== false) {
+	$admin_option_defs['Administration']['asol_reports_relates_management'] = $adminRelatesPanel;
+}
+
+$adminTemplatesPanel = asol_ReportsUtils::managePremiumFeature("reportTemplatesManagement", "reportFunctions.php", "getReportTemplatesManagementAdminPanel", null);
+if ($adminTemplatesPanel !== false) {
+	$admin_option_defs['Administration']['asol_reports_templates_management'] = $adminTemplatesPanel;
+}
+
+$adminWebServicePanel = asol_ReportsUtils::managePremiumFeature("webServiceReports", "reportFunctions.php", "getReportWebServiceSynchronizationAdminPanel", null);
+if ($adminWebServicePanel !== false) {
+	$admin_option_defs['Administration']['asol_reports_webservice_reports_synch'] = $adminWebServicePanel;
+}
+//***********************//
+//***AlineaSol Premium***//
+//***********************//
+
+$admin_group_header[] = array(translate('LBL_ASOL_REPORTS_TITLE', 'asol_Reports'), '', false, $admin_option_defs, translate('LBL_ASOL_REPORTS_PANEL_DESC', 'asol_Reports'));
+
+
 
 /**
  *
@@ -65,6 +99,14 @@ $admin_group_header['sagility'] = array(
     $admin_option_defs,
     ''
 );
+
+
+$admin_option_defs = array();
+$admin_option_defs['Administration']['asol_config'] = array('asolAdministration', 'LBL_ASOL_CONFIG_TITLE', 'LBL_ASOL_CONFIG_DESC', './index.php?module=Administration&action=asolConfig');
+$admin_option_defs['Administration']['asol_repair'] = array('asolAdministration', 'LBL_ASOL_REPAIR_TITLE', 'LBL_ASOL_REPAIR_DESC', './index.php?module=Administration&action=asolRepair');
+
+$admin_group_header[] = array('LBL_ASOL_CONFIG_TITLE', '', false, $admin_option_defs, 'LBL_ASOL_ADMIN_PANEL_DESC');
+
 
 
 

@@ -175,6 +175,10 @@ array (
             'label' => 'LBL_REMARK_HISTORY',
             'customCode' => '{$fields.remark_history_c.value|escape:\'htmlentitydecode\' |escape:\'html\'|strip_tags|url2html|nl2br}',
           ),
+            1 =>
+                array(
+                    'name' => 'anmol_marketing_campaigns_leads_1_name',
+                ),
         ),
       ),
       'LBL_CONTACT_INFORMATION' => 
@@ -267,7 +271,7 @@ array (
       array (
         0 => 
         array (
-          1 => 
+            0 =>
           array (
             'name' => 'stream_interest_c',
             'studio' => 'visible',

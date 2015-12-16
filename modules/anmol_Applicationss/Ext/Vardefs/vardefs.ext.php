@@ -2,17 +2,9 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2015-09-16 13:05:15
-$dictionary["anmol_Applicationss"]["fields"]["anmol_applicationss_anmol_application_stages_1"] = array (
-  'name' => 'anmol_applicationss_anmol_application_stages_1',
-  'type' => 'link',
-  'relationship' => 'anmol_applicationss_anmol_application_stages_1',
-  'source' => 'non-db',
-  'module' => 'anmol_application_stages',
-  'bean_name' => 'anmol_application_stages',
-  'side' => 'right',
-  'vname' => 'LBL_ANMOL_APPLICATIONSS_ANMOL_APPLICATION_STAGES_1_FROM_ANMOL_APPLICATION_STAGES_TITLE',
-);
+// created: 2015-09-21 08:21:42
+$dictionary['anmol_Applicationss']['fields']['conditional_offer_c']['inline_edit'] = '';
+$dictionary['anmol_Applicationss']['fields']['conditional_offer_c']['labelValue'] = 'Apply for a Conditional Offer';
 
 
 // created: 2015-09-08 17:22:07
@@ -28,18 +20,37 @@ $dictionary["anmol_Applicationss"]["fields"]["anmol_applicationss_documents_1"] 
 );
 
 
-// created: 2015-09-22 22:57:01
-$dictionary["anmol_Applicationss"]["fields"]["anmol_applicationss_tasks_1"] = array (
-  'name' => 'anmol_applicationss_tasks_1',
+// created: 2015-09-23 01:54:31
+$dictionary['anmol_Applicationss']['fields']['testf_c']['inline_edit'] = '';
+$dictionary['anmol_Applicationss']['fields']['testf_c']['labelValue'] = 'testf';
+
+
+// created: 2015-09-21 08:33:28
+$dictionary['anmol_Applicationss']['fields']['unchecked_docs_c']['inline_edit'] = '';
+$dictionary['anmol_Applicationss']['fields']['unchecked_docs_c']['labelValue'] = 'Unchecked Docs';
+
+
+// created: 2015-09-16 13:05:15
+$dictionary["anmol_Applicationss"]["fields"]["anmol_applicationss_anmol_application_stages_1"] = array(
+    'name' => 'anmol_applicationss_anmol_application_stages_1',
   'type' => 'link',
-  'relationship' => 'anmol_applicationss_tasks_1',
+    'relationship' => 'anmol_applicationss_anmol_application_stages_1',
   'source' => 'non-db',
-  'module' => 'Tasks',
-  'bean_name' => 'Task',
+    'module' => 'anmol_application_stages',
+    'bean_name' => 'anmol_application_stages',
   'side' => 'right',
-  'vname' => 'LBL_ANMOL_APPLICATIONSS_TASKS_1_FROM_TASKS_TITLE',
+    'vname' => 'LBL_ANMOL_APPLICATIONSS_ANMOL_APPLICATION_STAGES_1_FROM_ANMOL_APPLICATION_STAGES_TITLE',
 );
 
+
+// created: 2015-09-14 01:14:39
+$dictionary['anmol_Applicationss']['fields']['filename']['required'] = true;
+$dictionary['anmol_Applicationss']['fields']['filename']['inline_edit'] = true;
+$dictionary['anmol_Applicationss']['fields']['filename']['importable'] = 'true';
+$dictionary['anmol_Applicationss']['fields']['filename']['merge_filter'] = 'disabled';
+$dictionary['anmol_Applicationss']['fields']['filename']['audited'] = true;
+
+ 
 
 // created: 2015-09-08 17:45:17
 $dictionary["anmol_Applicationss"]["fields"]["anmol_course_search_anmol_applicationss_2"] = array(
@@ -114,6 +125,29 @@ $dictionary["anmol_Applicationss"]["fields"]["contacts_anmol_applicationss_1cont
 );
 
 
+// created: 2015-09-22 22:57:01
+$dictionary["anmol_Applicationss"]["fields"]["anmol_applicationss_tasks_1"] = array(
+    'name' => 'anmol_applicationss_tasks_1',
+    'type' => 'link',
+    'relationship' => 'anmol_applicationss_tasks_1',
+    'source' => 'non-db',
+    'module' => 'Tasks',
+    'bean_name' => 'Task',
+    'side' => 'right',
+    'vname' => 'LBL_ANMOL_APPLICATIONSS_TASKS_1_FROM_TASKS_TITLE',
+);
+
+
+// created: 2015-09-08 17:50:18
+$dictionary['anmol_Applicationss']['fields']['name']['required'] = false;
+$dictionary['anmol_Applicationss']['fields']['name']['inline_edit'] = true;
+$dictionary['anmol_Applicationss']['fields']['name']['duplicate_merge'] = 'disabled';
+$dictionary['anmol_Applicationss']['fields']['name']['duplicate_merge_dom_value'] = '0';
+$dictionary['anmol_Applicationss']['fields']['name']['merge_filter'] = 'disabled';
+$dictionary['anmol_Applicationss']['fields']['name']['unified_search'] = false;
+
+
+
 /**
  * Created by PhpStorm.
  * User: andy
@@ -128,6 +162,46 @@ $dictionary['anmol_Applicationss']['fields']['file_mime_type'] = array(
     'importable' => false,
 );
 
+// created: 2015-12-16 12:03:24
+$dictionary["anmol_Applicationss"]["fields"]["fp_event_locations_anmol_applicationss_1"] = array(
+    'name' => 'fp_event_locations_anmol_applicationss_1',
+    'type' => 'link',
+    'relationship' => 'fp_event_locations_anmol_applicationss_1',
+    'source' => 'non-db',
+    'module' => 'FP_Event_Locations',
+    'bean_name' => 'FP_Event_Locations',
+    'vname' => 'LBL_FP_EVENT_LOCATIONS_ANMOL_APPLICATIONSS_1_FROM_FP_EVENT_LOCATIONS_TITLE',
+    'id_name' => 'fp_event_locations_anmol_applicationss_1fp_event_locations_ida',
+);
+$dictionary["anmol_Applicationss"]["fields"]["fp_event_locations_anmol_applicationss_1_name"] = array(
+    'name' => 'fp_event_locations_anmol_applicationss_1_name',
+    'type' => 'relate',
+    'source' => 'non-db',
+    'vname' => 'LBL_FP_EVENT_LOCATIONS_ANMOL_APPLICATIONSS_1_FROM_FP_EVENT_LOCATIONS_TITLE',
+    'save' => true,
+    'id_name' => 'fp_event_locations_anmol_applicationss_1fp_event_locations_ida',
+    'link' => 'fp_event_locations_anmol_applicationss_1',
+    'table' => 'fp_event_locations',
+    'module' => 'FP_Event_Locations',
+    'rname' => 'name',
+);
+$dictionary["anmol_Applicationss"]["fields"]["fp_event_locations_anmol_applicationss_1fp_event_locations_ida"] = array(
+    'name' => 'fp_event_locations_anmol_applicationss_1fp_event_locations_ida',
+    'type' => 'link',
+    'relationship' => 'fp_event_locations_anmol_applicationss_1',
+    'source' => 'non-db',
+    'reportable' => false,
+    'side' => 'right',
+    'vname' => 'LBL_FP_EVENT_LOCATIONS_ANMOL_APPLICATIONSS_1_FROM_ANMOL_APPLICATIONSS_TITLE',
+);
+
+
+// created: 2015-09-08 17:52:07
+$dictionary['anmol_Applicationss']['fields']['uni_name_c']['inline_edit'] = '1';
+$dictionary['anmol_Applicationss']['fields']['uni_name_c']['labelValue'] = 'University';
+
+
+
 /**
  * Created by PhpStorm.
  * User: andy
@@ -137,6 +211,8 @@ $dictionary['anmol_Applicationss']['fields']['file_mime_type'] = array(
 
 
 $dictionary['anmol_Applicationss']['fields']['anmol_course_search_anmol_applicationss_2_name']['required'] = true;  /// Making it Required
+
+$dictionary['anmol_Applicationss']['fields']['contacts_anmol_applicationss_1_name']['required'] = true;  /// Making it Required
 
 
 /**
@@ -172,47 +248,4 @@ $dictionary['anmol_Applicationss']['fields']['filename'] = array(
     'reportable' => true,
     'importable' => false,
 );
-
- // created: 2015-09-21 08:21:42
-$dictionary['anmol_Applicationss']['fields']['conditional_offer_c']['inline_edit']='';
-$dictionary['anmol_Applicationss']['fields']['conditional_offer_c']['labelValue']='Apply for a Conditional Offer';
-
- 
-
- // created: 2015-09-14 01:14:39
-$dictionary['anmol_Applicationss']['fields']['filename']['required']=true;
-$dictionary['anmol_Applicationss']['fields']['filename']['inline_edit']=true;
-$dictionary['anmol_Applicationss']['fields']['filename']['importable']='true';
-$dictionary['anmol_Applicationss']['fields']['filename']['merge_filter']='disabled';
-$dictionary['anmol_Applicationss']['fields']['filename']['audited']=true;
-
- 
-
-// created: 2015-09-08 17:50:18
-$dictionary['anmol_Applicationss']['fields']['name']['required'] = false;
-$dictionary['anmol_Applicationss']['fields']['name']['inline_edit'] = true;
-$dictionary['anmol_Applicationss']['fields']['name']['duplicate_merge'] = 'disabled';
-$dictionary['anmol_Applicationss']['fields']['name']['duplicate_merge_dom_value'] = '0';
-$dictionary['anmol_Applicationss']['fields']['name']['merge_filter'] = 'disabled';
-$dictionary['anmol_Applicationss']['fields']['name']['unified_search'] = false;
-
-
-
- // created: 2015-09-23 01:54:31
-$dictionary['anmol_Applicationss']['fields']['testf_c']['inline_edit']='';
-$dictionary['anmol_Applicationss']['fields']['testf_c']['labelValue']='testf';
-
- 
-
- // created: 2015-09-21 08:33:28
-$dictionary['anmol_Applicationss']['fields']['unchecked_docs_c']['inline_edit']='';
-$dictionary['anmol_Applicationss']['fields']['unchecked_docs_c']['labelValue']='Unchecked Docs';
-
- 
-
-// created: 2015-09-08 17:52:07
-$dictionary['anmol_Applicationss']['fields']['uni_name_c']['inline_edit'] = '1';
-$dictionary['anmol_Applicationss']['fields']['uni_name_c']['labelValue'] = 'University';
-
-
 ?>

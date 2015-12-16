@@ -2,6 +2,15 @@
  //WARNING: The contents of this file are auto-generated
 
 
+// created: 2015-08-22 13:15:28
+$dictionary['Case']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
+
+
+// created: 2015-08-22 13:15:31
+$dictionary['Case']['fields']['jjwg_maps_geocode_status_c']['inline_edit'] = 1;
+
+
+
 /**
  *
  * @package Advanced OpenPortal
@@ -32,6 +41,11 @@ $dictionary["Case"]["fields"]["aop_case_events"] = array(
     'id_name' => 'case_id',
     'vname' => 'LBL_AOP_CASE_EVENTS',
 );
+
+
+// created: 2015-08-22 13:15:31
+$dictionary['Case']['fields']['jjwg_maps_address_c']['inline_edit'] = 1;
+
 
 
 /**
@@ -241,23 +255,8 @@ $dictionary['Case']['fields']['SecurityGroups'] = array(
 
 
 
-// created: 2015-08-22 13:15:31
-$dictionary['Case']['fields']['jjwg_maps_address_c']['inline_edit'] = 1;
-
-
-
-// created: 2015-08-22 13:15:31
-$dictionary['Case']['fields']['jjwg_maps_geocode_status_c']['inline_edit'] = 1;
-
-
-
 // created: 2015-08-22 13:15:29
 $dictionary['Case']['fields']['jjwg_maps_lat_c']['inline_edit'] = 1;
-
-
-
-// created: 2015-08-22 13:15:28
-$dictionary['Case']['fields']['jjwg_maps_lng_c']['inline_edit'] = 1;
 
 
 ?>

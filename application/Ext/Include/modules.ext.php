@@ -23,6 +23,7 @@ $report_include_modules['AOW_Conditions'] = 'AOW_Conditions';
 $modInvisList[] = 'AOW_Conditions';
 
 
+
 //WARNING: The contents of this file are auto-generated
 $beanList['AOR_Reports'] = 'AOR_Report';
 $beanFiles['AOR_Report'] = 'modules/AOR_Reports/AOR_Report.php';
@@ -69,6 +70,7 @@ $report_include_modules['AOD_Index'] = 'AOD_Index';
 $modInvisList[] = 'AOD_Index';
 
 
+
 $beanList['AM_ProjectTemplates'] = 'AM_ProjectTemplates';
 $beanFiles['AM_ProjectTemplates'] = 'modules/AM_ProjectTemplates/AM_ProjectTemplates.php';
 $moduleList[] = 'AM_ProjectTemplates';
@@ -100,6 +102,12 @@ $moduleList[] = 'jjwg_Address_Cache';
 
 
 //WARNING: The contents of this file are auto-generated
+$beanList['asol_Reports'] = 'asol_Report';
+$beanFiles['asol_Report'] = 'modules/asol_Reports/asol_Report.php';
+$moduleList[] = 'asol_Reports';
+
+
+//WARNING: The contents of this file are auto-generated
 $beanList['AOP_Case_Events'] = 'AOP_Case_Events';
 $beanFiles['AOP_Case_Events'] = 'modules/AOP_Case_Events/AOP_Case_Events.php';
 $modules_exempt_from_availability_check['AOP_Case_Events'] = 'AOP_Case_Events';
@@ -117,6 +125,9 @@ $modInvisList[] = 'AOP_Case_Updates';
 $beanList['anmol_Applicationss'] = 'anmol_Applicationss';
 $beanFiles['anmol_Applicationss'] = 'modules/anmol_Applicationss/anmol_Applicationss.php';
 $moduleList[] = 'anmol_Applicationss';
+
+
+$bwcModules[] = 'asol_Reports';
 
 
 //WARNING: The contents of this file are auto-generated

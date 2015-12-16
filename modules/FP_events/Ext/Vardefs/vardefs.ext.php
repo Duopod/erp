@@ -12,16 +12,6 @@ $dictionary["FP_events"]["fields"]["fp_events_contacts"] = array(
 );
 
 
-// created: 2013-04-30 14:55:07
-$dictionary["FP_events"]["fields"]["fp_events_prospects_1"] = array(
-    'name' => 'fp_events_prospects_1',
-    'type' => 'link',
-    'relationship' => 'fp_events_prospects_1',
-    'source' => 'non-db',
-    'vname' => 'LBL_FP_EVENTS_PROSPECTS_1_FROM_PROSPECTS_TITLE',
-);
-
-
 // created: 2013-04-25 10:18:48
 $dictionary["FP_events"]["fields"]["fp_event_locations_fp_events_1"] = array(
     'name' => 'fp_event_locations_fp_events_1',
@@ -51,6 +41,16 @@ $dictionary["FP_events"]["fields"]["fp_event_locations_fp_events_1fp_event_locat
     'reportable' => false,
     'side' => 'right',
     'vname' => 'LBL_FP_EVENT_LOCATIONS_FP_EVENTS_1_FROM_FP_EVENTS_TITLE',
+);
+
+
+// created: 2013-04-30 14:55:07
+$dictionary["FP_events"]["fields"]["fp_events_prospects_1"] = array(
+    'name' => 'fp_events_prospects_1',
+    'type' => 'link',
+    'relationship' => 'fp_events_prospects_1',
+    'source' => 'non-db',
+    'vname' => 'LBL_FP_EVENTS_PROSPECTS_1_FROM_PROSPECTS_TITLE',
 );
 
 ?>

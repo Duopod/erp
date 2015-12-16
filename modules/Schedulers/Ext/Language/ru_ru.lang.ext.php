@@ -2,13 +2,9 @@
  //WARNING: The contents of this file are auto-generated
 
 
-$mod_strings['LBL_AODOPTIMISEINDEX'] = 'Оптимизация индекса полнотекстового поиска'; ///
-$mod_strings['LBL_AODINDEXUNINDEXED'] = 'Неиндексированные документы'; ///
-
-
 /**
- *
- * @package Advanced OpenPortal
+ * Advanced OpenWorkflow, Automating SugarCRM.
+ * @package Advanced OpenWorkflow for SugarCRM
  * @copyright SalesAgility Ltd http://www.salesagility.com
  *
  * This program is free software; you can redistribute it and/or modify
@@ -26,9 +22,13 @@ $mod_strings['LBL_AODINDEXUNINDEXED'] = 'Неиндексированные до
  * or write to the Free Software Foundation,Inc., 51 Franklin Street,
  * Fifth Floor, Boston, MA 02110-1301  USA
  *
- * @author Salesagility Ltd <support@salesagility.com>
+ * @author SalesAgility <info@salesagility.com>
  */
-$mod_strings['LBL_POLLMONITOREDINBOXESAOP'] = 'Портал - проверять почтовые ящики для входящей почты';
+
+$mod_strings['LBL_PROCESSAOW_WORKFLOW'] = 'Выполнить настроенные процессы';
+
+
+
 
 /**
  *
@@ -57,8 +57,8 @@ $mod_strings['LBL_AORRUNSCHEDULEDREPORTS'] = 'Run scheduled reports';
 
 
 /**
- * Advanced OpenWorkflow, Automating SugarCRM.
- * @package Advanced OpenWorkflow for SugarCRM
+ *
+ * @package Advanced OpenPortal
  * @copyright SalesAgility Ltd http://www.salesagility.com
  *
  * This program is free software; you can redistribute it and/or modify
@@ -76,11 +76,11 @@ $mod_strings['LBL_AORRUNSCHEDULEDREPORTS'] = 'Run scheduled reports';
  * or write to the Free Software Foundation,Inc., 51 Franklin Street,
  * Fifth Floor, Boston, MA 02110-1301  USA
  *
- * @author SalesAgility <info@salesagility.com>
+ * @author Salesagility Ltd <support@salesagility.com>
  */
+$mod_strings['LBL_POLLMONITOREDINBOXESAOP'] = 'Портал - проверять почтовые ящики для входящей почты';
 
-$mod_strings['LBL_PROCESSAOW_WORKFLOW'] = 'Выполнить настроенные процессы';
-
-
+$mod_strings['LBL_AODOPTIMISEINDEX'] = 'Оптимизация индекса полнотекстового поиска'; ///
+$mod_strings['LBL_AODINDEXUNINDEXED'] = 'Неиндексированные документы'; ///
 
 ?>

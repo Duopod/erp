@@ -39,7 +39,7 @@
 $relationships = array(
     'anmol_marketing_campaigns_anmol_marketing_activities' =>
         array(
-            'id' => '8f99f3af-23e9-7d64-f3b8-55eaea66b139',
+            'id' => 'aaa307a9-7102-13be-ed6a-56613aa9a56f',
             'relationship_name' => 'anmol_marketing_campaigns_anmol_marketing_activities',
             'lhs_module' => 'anmol_marketing_campaigns',
             'lhs_table' => 'anmol_marketing_campaigns',
@@ -61,11 +61,11 @@ $relationships = array(
             'is_custom' => true,
             'relationship_only' => false,
             'for_activities' => false,
-            'from_studio' => false,
+            'from_studio' => true,
         ),
     'anmol_marketing_campaigns_modified_user' =>
         array(
-            'id' => 'd8b8b1ca-2930-4e8e-d9db-55eaea261c76',
+            'id' => 'e12838ad-94c3-6d36-a97a-56613a323d85',
             'relationship_name' => 'anmol_marketing_campaigns_modified_user',
             'lhs_module' => 'Users',
             'lhs_table' => 'users',
@@ -87,11 +87,11 @@ $relationships = array(
             'relationship_only' => false,
             'for_activities' => false,
             'is_custom' => false,
-            'from_studio' => false,
+            'from_studio' => true,
         ),
     'anmol_marketing_campaigns_created_by' =>
         array(
-            'id' => 'e191223b-dc89-a00f-169a-55eaeab76571',
+            'id' => 'e78357dc-86d9-8e5a-d801-56613a582fdd',
             'relationship_name' => 'anmol_marketing_campaigns_created_by',
             'lhs_module' => 'Users',
             'lhs_table' => 'users',
@@ -113,11 +113,11 @@ $relationships = array(
             'relationship_only' => false,
             'for_activities' => false,
             'is_custom' => false,
-            'from_studio' => false,
+            'from_studio' => true,
         ),
     'anmol_marketing_campaigns_assigned_user' =>
         array(
-            'id' => 'e94cc37f-9185-4d7b-caab-55eaea424806',
+            'id' => 'eba2e292-e56c-a36c-23f0-56613af02101',
             'relationship_name' => 'anmol_marketing_campaigns_assigned_user',
             'lhs_module' => 'Users',
             'lhs_table' => 'users',
@@ -139,6 +139,22 @@ $relationships = array(
             'relationship_only' => false,
             'for_activities' => false,
             'is_custom' => false,
-            'from_studio' => false,
+            'from_studio' => true,
+        ),
+    'anmol_marketing_campaigns_leads_1' =>
+        array(
+            'rhs_label' => 'Leads',
+            'lhs_label' => 'Marketing Campaign',
+            'rhs_subpanel' => 'default',
+            'lhs_module' => 'anmol_marketing_campaigns',
+            'rhs_module' => 'Leads',
+            'relationship_type' => 'one-to-many',
+            'readonly' => true,
+            'deleted' => false,
+            'relationship_only' => false,
+            'for_activities' => false,
+            'is_custom' => false,
+            'from_studio' => true,
+            'relationship_name' => 'anmol_marketing_campaigns_leads_1',
         ),
 );

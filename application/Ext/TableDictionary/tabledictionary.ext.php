@@ -17,6 +17,10 @@ include('custom/metadata/anmol_university_list_anmol_applications_1MetaData.php'
 
 
 //WARNING: The contents of this file are auto-generated
+include('custom/metadata/fp_event_locations_anmol_applications_1MetaData.php');
+
+
+//WARNING: The contents of this file are auto-generated
 include('custom/metadata/aos_quotes_aos_contractsMetaData.php');
 
 
@@ -30,8 +34,10 @@ include('custom/metadata/contacts_anmol_application_stages_1MetaData.php');
 include('custom/metadata/anmol_course_search_anmol_applications_1MetaData.php');
 
 
+
 //WARNING: The contents of this file are auto-generated
 include('custom/metadata/anmol_applicationss_documents_1MetaData.php');
+
 
 
 //WARNING: The contents of this file are auto-generated
@@ -46,6 +52,10 @@ include('custom/metadata/securitygroups_acl_rolesMetaData.php');
 
 //WARNING: The contents of this file are auto-generated
 include('custom/metadata/aow_processed_aow_actionsMetaData.php');
+
+
+//WARNING: The contents of this file are auto-generated
+include('custom/metadata/fp_event_locations_contacts_1MetaData.php');
 
 
 //WARNING: The contents of this file are auto-generated
@@ -66,6 +76,9 @@ include('custom/metadata/securitygroups_recordsMetaData.php');
  //WARNING: The contents of this file are auto-generated
 include('custom/metadata/anmol_applicationss_anmol_application_stages_1MetaData.php');
 
+
+//WARNING: The contents of this file are auto-generated
+include('custom/metadata/fp_event_locations_anmol_application_stages_1MetaData.php');
 
 
 //WARNING: The contents of this file are auto-generated
@@ -178,6 +191,10 @@ include('custom/metadata/anmol_application_stages_anmol_docscollection_1MetaData
 
 //WARNING: The contents of this file are auto-generated
 include('custom/metadata/fp_event_locations_fp_events_1MetaData.php');
+
+
+//WARNING: The contents of this file are auto-generated
+include('custom/metadata/fp_event_locations_anmol_applicationss_1MetaData.php');
 
 
 

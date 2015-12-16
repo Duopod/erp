@@ -25,4 +25,28 @@ $layout_defs["anmol_marketing_campaigns"]["subpanel_setup"]['anmol_marketing_cam
         ),
 );
 
+
+// created: 2015-12-04 07:04:19
+$layout_defs["anmol_marketing_campaigns"]["subpanel_setup"]['anmol_marketing_campaigns_leads_1'] = array(
+    'order' => 100,
+    'module' => 'Leads',
+    'subpanel_name' => 'default',
+    'sort_order' => 'asc',
+    'sort_by' => 'id',
+    'title_key' => 'LBL_ANMOL_MARKETING_CAMPAIGNS_LEADS_1_FROM_LEADS_TITLE',
+    'get_subpanel_data' => 'anmol_marketing_campaigns_leads_1',
+    'top_buttons' =>
+        array(
+            0 =>
+                array(
+                    'widget_class' => 'SubPanelTopButtonQuickCreate',
+                ),
+            1 =>
+                array(
+                    'widget_class' => 'SubPanelTopSelectButton',
+                    'mode' => 'MultiSelect',
+                ),
+        ),
+);
+
 ?>

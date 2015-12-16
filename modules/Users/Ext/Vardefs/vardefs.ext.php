@@ -2,37 +2,31 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2015-08-29 17:04:07
-$dictionary["User"]["fields"]["documents_users_1"] = array(
-    'name' => 'documents_users_1',
+$dictionary['Users']['fields']['fp_event_locations_users_1_name']['required'] = true;
+
+
+// created: 2015-08-29 17:09:46
+$dictionary["User"]["fields"]["users_documents_1"] = array(
+    'name' => 'users_documents_1',
     'type' => 'link',
-    'relationship' => 'documents_users_1',
+    'relationship' => 'users_documents_1',
     'source' => 'non-db',
     'module' => 'Documents',
     'bean_name' => 'Document',
-    'vname' => 'LBL_DOCUMENTS_USERS_1_FROM_DOCUMENTS_TITLE',
-    'id_name' => 'documents_users_1documents_ida',
-);
-$dictionary["User"]["fields"]["documents_users_1_name"] = array(
-    'name' => 'documents_users_1_name',
-    'type' => 'relate',
-    'source' => 'non-db',
-    'vname' => 'LBL_DOCUMENTS_USERS_1_FROM_DOCUMENTS_TITLE',
-    'save' => true,
-    'id_name' => 'documents_users_1documents_ida',
-    'link' => 'documents_users_1',
-    'table' => 'documents',
-    'module' => 'Documents',
-    'rname' => 'document_name',
-);
-$dictionary["User"]["fields"]["documents_users_1documents_ida"] = array(
-    'name' => 'documents_users_1documents_ida',
-    'type' => 'link',
-    'relationship' => 'documents_users_1',
-    'source' => 'non-db',
-    'reportable' => false,
     'side' => 'right',
-    'vname' => 'LBL_DOCUMENTS_USERS_1_FROM_USERS_TITLE',
+    'vname' => 'LBL_USERS_DOCUMENTS_1_FROM_DOCUMENTS_TITLE',
+);
+
+
+// created: 2014-06-20 12:06:29
+$dictionary["User"]["fields"]["project_users_1"] = array(
+    'name' => 'project_users_1',
+    'type' => 'link',
+    'relationship' => 'project_users_1',
+    'source' => 'non-db',
+    'module' => 'Project',
+    'bean_name' => 'Project',
+    'vname' => 'LBL_PROJECT_USERS_1_FROM_PROJECT_TITLE',
 );
 
 
@@ -70,21 +64,8 @@ $dictionary["User"]["fields"]["fp_event_locations_users_1fp_event_locations_ida"
 );
 
 
-// created: 2014-06-20 12:06:29
-$dictionary["User"]["fields"]["project_users_1"] = array(
-    'name' => 'project_users_1',
-    'type' => 'link',
-    'relationship' => 'project_users_1',
-    'source' => 'non-db',
-    'module' => 'Project',
-    'bean_name' => 'Project',
-    'vname' => 'LBL_PROJECT_USERS_1_FROM_PROJECT_TITLE',
-);
-
-
-$dictionary['Users']['fields']['fp_event_locations_users_1_name']['required'] = true;
-
-
+// created: 2015-09-14 00:21:13
+$dictionary['User']['fields']['pushbullet_token_c']['inline_edit'] = 1;
 
 
 $dictionary["User"]["fields"]["SecurityGroups"] = array(
@@ -136,29 +117,43 @@ $dictionary["User"]["fields"]['securitygroup_primary_group'] = array(
 );
 
 
+// created: 2015-08-29 17:04:07
+$dictionary["User"]["fields"]["documents_users_1"] = array(
+    'name' => 'documents_users_1',
+    'type' => 'link',
+    'relationship' => 'documents_users_1',
+    'source' => 'non-db',
+    'module' => 'Documents',
+    'bean_name' => 'Document',
+    'vname' => 'LBL_DOCUMENTS_USERS_1_FROM_DOCUMENTS_TITLE',
+    'id_name' => 'documents_users_1documents_ida',
+);
+$dictionary["User"]["fields"]["documents_users_1_name"] = array(
+    'name' => 'documents_users_1_name',
+    'type' => 'relate',
+    'source' => 'non-db',
+    'vname' => 'LBL_DOCUMENTS_USERS_1_FROM_DOCUMENTS_TITLE',
+    'save' => true,
+    'id_name' => 'documents_users_1documents_ida',
+    'link' => 'documents_users_1',
+    'table' => 'documents',
+    'module' => 'Documents',
+    'rname' => 'document_name',
+);
+$dictionary["User"]["fields"]["documents_users_1documents_ida"] = array(
+    'name' => 'documents_users_1documents_ida',
+    'type' => 'link',
+    'relationship' => 'documents_users_1',
+    'source' => 'non-db',
+    'reportable' => false,
+    'side' => 'right',
+    'vname' => 'LBL_DOCUMENTS_USERS_1_FROM_USERS_TITLE',
+);
 
 
 // created: 2015-08-29 17:16:19
 $dictionary['User']['fields']['address_c']['inline_edit'] = '1';
 $dictionary['User']['fields']['address_c']['labelValue'] = 'address';
 
-
-
- // created: 2015-09-14 00:21:13
-$dictionary['User']['fields']['pushbullet_token_c']['inline_edit']=1;
-
- 
-
-// created: 2015-08-29 17:09:46
-$dictionary["User"]["fields"]["users_documents_1"] = array(
-    'name' => 'users_documents_1',
-    'type' => 'link',
-    'relationship' => 'users_documents_1',
-    'source' => 'non-db',
-    'module' => 'Documents',
-    'bean_name' => 'Document',
-    'side' => 'right',
-    'vname' => 'LBL_USERS_DOCUMENTS_1_FROM_DOCUMENTS_TITLE',
-);
 
 ?>

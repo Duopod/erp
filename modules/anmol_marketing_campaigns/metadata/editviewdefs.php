@@ -42,7 +42,6 @@ $viewdefs [$module_name] =
                                                 'studio' => 'visible',
                                                 'label' => 'LBL_CAMPAIGN_TYPE',
                                             ),
-                                        1 => '',
                                     ),
                                 1 =>
                                     array(

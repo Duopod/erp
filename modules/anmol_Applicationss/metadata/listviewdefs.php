@@ -41,6 +41,15 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+    'FP_EVENT_LOCATIONS_ANMOL_APPLICATIONSS_1_NAME' =>
+        array(
+            'type' => 'relate',
+            'link' => true,
+            'label' => 'LBL_FP_EVENT_LOCATIONS_ANMOL_APPLICATIONSS_1_FROM_FP_EVENT_LOCATIONS_TITLE',
+            'id' => 'FP_EVENT_LOCATIONS_ANMOL_APPLICATIONSS_1FP_EVENT_LOCATIONS_IDA',
+            'width' => '10%',
+            'default' => true,
+        ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

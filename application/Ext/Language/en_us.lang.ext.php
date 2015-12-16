@@ -604,6 +604,15 @@ $app_strings['LBL_LOGOUT_AS'] = "Logout as ";
 $app_strings['LBL_SECURITYGROUP'] = 'Security Group';
 
 
+$sugar_config['addAjaxBannedModules'][] = "asol_Reports";
+
+$app_list_strings['moduleList']['asol_Reports'] = 'Reports';
+
+$app_strings['LBL_DASHLET_REPORTCHART'] = 'AlineaSol Reports';
+$app_strings['LBL_DASHLET_REPORTCHART_DESC'] = 'AlineaSol Reports';
+$app_strings['LBL_DASHLET_REPORTCHART_REPORTID'] = 'Select Report';
+
+
 /**
  * Extensions to SugarCRM
  * @package Reschedule for SugarCRM

@@ -162,7 +162,6 @@ array (
             'name' => 'email_subject_stage2_c',
             'label' => 'LBL_EMAIL_SUBJECT_STAGE2',
           ),
-          1 => '',
         ),
         12 => 
         array (
@@ -172,7 +171,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_BODY_STAGE2',
           ),
-          1 => '',
         ),
         13 => 
         array (
@@ -190,7 +188,6 @@ array (
             'name' => 'pendency_state_c',
             'label' => 'LBL_PENDENCY_STATE',
           ),
-          1 => '',
         ),
         15 => 
         array (
@@ -215,7 +212,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_UNCHECKED_DOCS',
           ),
-          1 => '',
         ),
       ),
     ),

@@ -105,6 +105,13 @@ array (
             'name' => 'anmol_docscollection_anmol_application_stages_1_name',
           ),
         ),
+          7 =>
+              array(
+                  0 =>
+                      array(
+                          'name' => 'fp_event_locations_anmol_application_stages_1_name',
+                      ),
+              ),
       ),
     ),
   ),

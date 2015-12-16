@@ -22,9 +22,11 @@ class update_uni
         // First check if the File is Selected or no
         $f_name = $bean->filename;
 
+
         if ($f_name == "") {
             die("Error: File not Selected!");
         };
+        // die;
         // Check File Extension Zip or No
         $f_extn = explode(".", $f_name);
 

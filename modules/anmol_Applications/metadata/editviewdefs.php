@@ -46,6 +46,13 @@ $viewdefs [$module_name] =
                                         0 => 'description',
                                         1 => 'assigned_user_name',
                                     ),
+                                2 =>
+                                    array(
+                                        0 =>
+                                            array(
+                                                'name' => 'fp_event_locations_anmol_applications_1_name',
+                                            ),
+                                    ),
                             ),
                     ),
             ),
