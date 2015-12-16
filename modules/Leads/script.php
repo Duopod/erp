@@ -44,7 +44,6 @@ class script_branch
         <script>
             (function ($) {
                 $(document).ready(function () {
-
                     var assigned_usr_id = $('#assigned_user_id').val();
 
                     // watch for a change in course ID
@@ -104,6 +103,12 @@ class script_branch
                     $('#btn_fp_event_locations_leads_1_name').remove();
                     $('#btn_clr_fp_event_locations_leads_1_name').remove();
 
+                    //For Converted Leads
+                    $('#Contactsfp_event_locations_contacts_1fp_event_locations_ida').val($brancID);
+                    $('#Contactsfp_event_locations_contacts_1_name').val($branchName);
+                    $('#Contactsfp_event_locations_contacts_1_name').attr("disabled", "true");
+                    $('#btn_Contactsfp_event_locations_contacts_1_name').remove();
+                    $('#btn_clr_Contactsfp_event_locations_contacts_1_name').remove();
                     //alert("hello");
 
                     //  $('#follow_up_date_c_time_section').css("display", "none");

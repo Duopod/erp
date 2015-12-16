@@ -76,6 +76,14 @@ $viewdefs['Contacts']['ConvertLead'] = array(
             ),
             ////////////////////////
 
+            array(
+                0 =>
+                    array(
+                        'name' => 'fp_event_locations_contacts_1_name',
+                    ),
+
+            ),
+            ////////////////////////
 
             array(
 

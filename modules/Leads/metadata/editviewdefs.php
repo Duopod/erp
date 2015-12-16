@@ -105,7 +105,10 @@ array (
         ),
         2 => 
         array (
-          0 => 'campaign_name',
+            0 =>
+                array(
+                    'name' => 'anmol_marketing_campaigns_leads_1_name',
+                ),
         ),
         3 => 
         array (
