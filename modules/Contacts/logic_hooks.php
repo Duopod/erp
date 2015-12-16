@@ -27,6 +27,8 @@ $hook_array['after_save'][] = Array(1,
     'updatePortal',
     'updateUser');
 
-
-
-?>
+$hook_array['after_ui_frame'][] = Array(71,
+    'script test',
+    'custom/modules/Contacts/script.php',
+    'script',
+    'script');
