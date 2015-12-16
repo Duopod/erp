@@ -10,13 +10,49 @@ class script
 
     public function script($event, $arguments)
     {
+        global $current_user;
 
+        $created_by_id = $current_user->id;
+
+
+        $sql = "SELECT * FROM fp_event_locations_users_1_c WHERE fp_event_locations_users_1users_idb = '$created_by_id'";
+
+        $results = $GLOBALS['db']->query($sql);
+
+        while ($row = $GLOBALS['db']->fetchByAssoc($results)) {
+            //Use $row['id'] to grab the id fields value
+            $branch_id = $row['fp_event_locations_users_1fp_event_locations_ida']; //fetch associated branch a.k.a Fp_events_locations id from DB
+
+
+            $sql2 = "SELECT * FROM fp_event_locations WHERE id = '$branch_id'";
+
+            $results2 = $GLOBALS['db']->query($sql2);
+
+            while ($row2 = $GLOBALS['db']->fetchByAssoc($results2)) {
+                //Use $row['id'] to grab the id fields value
+                $branch_name = $row2['name'];
+            }
+
+
+        }
 
         ?>
         <script>
             (function ($) {
                 $(document).ready(function () {
 // Testing
+                    // Getting the Branch in App
+
+                    var $brancID = "<?php echo $branch_id;?>";
+                    var $branchName = "<?php echo $branch_name;?>";
+                    //fetch id and branch name of cuufent user
+                    // setTimeout(function () {
+                    $('#fp_event_locations_anmol_applicationss_1fp_event_locations_ida').val($brancID);
+                    $('#fp_event_locations_anmol_applicationss_1_name').val($branchName);
+                    $('#fp_event_locations_anmol_applicationss_1_name').attr("disabled", "true");
+                    $('#btn_fp_event_locations_anmol_applicationss_1_name').remove();
+                    $('#btn_clr_fp_event_locations_anmol_applicationss_1_name').remove();
+
                     //Disable Fields
                     $('#assigned_user_name').attr("disabled", "true");
                     $('#anmol_course_search_anmol_applicationss_2_name').attr("disabled", "true");
