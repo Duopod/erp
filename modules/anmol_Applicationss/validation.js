@@ -3,7 +3,7 @@
  */
 
 function customSaveFunction() {
-
+    var flag = 0;
     var isOK = true;
     var unchecked_docs = "";
 
@@ -20,7 +20,7 @@ function customSaveFunction() {
                 //alert($(this).parent().next().text());
                 var unchecked_doc = $(this).parent().next().text();
                 //  unchecked_doc.toString();
-                unchecked_docs = unchecked_docs + "</br>" + unchecked_doc;
+                unchecked_docs = unchecked_docs + unchecked_doc + "</br>";
 
                 // alert(unchecked_docs);
                 $('#unchecked_docs_c').val(unchecked_docs);

@@ -65,7 +65,9 @@ class script
                     $('#btn_clr_contacts_anmol_applicationss_1_name').css("display", "none");
                     $('#conditional_offer_c_label').parent().css("display", "none");
                     $('#testf_c_label').parent().css("display", "none");
-
+                    $('#unchecked_docs_c_label').css("display", "none");
+                    $('#unchecked_docs_c').css("display", "none");
+                    $('#additional_pendency_remark_c_label').parent().css("display", "none");
                     ///////////////////
                     var test = $('#contacts_anmol_applicationss_1contacts_ida').val();
                     $('#testf_c').attr("value", test);
@@ -96,6 +98,17 @@ class script
                     function getAccountData(id, theInterval) {
 
                         $('#conditional_offer_c_label').parent().css("display", "table-row");
+
+
+                        $('#conditional_offer_c').change(function () {
+                            if (this.checked)
+                                $('#additional_pendency_remark_c_label').parent().css("display", "table-row");
+                            else
+                                $('#additional_pendency_remark_c_label').parent().css("display", "none");
+
+                        });
+
+
                         //Hides the Select Course Button and Clear Button on course Select
                         $('#btn_anmol_course_search_anmol_applicationss_2_name').css("display", "none");
                         $('#btn_clr_anmol_course_search_anmol_applicationss_2_name').css("display", "none");

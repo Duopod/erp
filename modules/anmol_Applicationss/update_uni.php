@@ -36,7 +36,13 @@ class update_uni
 
 
         //**********************************************************
+        // Combining the Pendencies and the Additional remark
+        if ($bean->additional_pendency_remark_c != "") {
+            $bean->unchecked_docs_c = $bean->unchecked_docs_c . "<b>Additional Remarks: </b>" . $bean->additional_pendency_remark_c;
+        }
 
+
+        //**********************************************************
         $course_id = $bean->anmol_course_search_anmol_applicationss_2anmol_course_search_ida;
         $id = $bean->id;
         // die($id);
