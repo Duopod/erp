@@ -140,6 +140,34 @@ class script_branch
                     $('#follow_up_date_c_date').val("");
                     $('#re_assign_comment_c').val("");
 
+
+                    // ENGLISH PROFICIENY TESTS LOGIC
+
+                    // Initially Hide all fields
+                    $('#ielts_overall_c_label,#ielts_result_awaited_c_label,#ielts_test_date_c_label,#ielts_writing_c_label,#ielts_speaking_c_label').parent().css("display", "none");
+                    // Show on change of IELTS
+                    $('#ielts_c').change(function () {
+                        if (this.checked) {
+                            $('#ielts_overall_c_label,#ielts_result_awaited_c_label,#ielts_writing_c_label,#ielts_speaking_c_label').parent().css("display", "table-row");
+                            $('#ielts_result_awaited_c').change(function () {
+                                if (this.checked) {
+                                    $('#ielts_overall_c_label,#ielts_writing_c_label,#ielts_speaking_c_label').parent().css("display", "none");
+                                    $('#ielts_test_date_c_label').parent().css("display", "table-row");
+                                }
+                                else {
+                                    $('#ielts_overall_c_label,#ielts_writing_c_label,#ielts_speaking_c_label').parent().css("display", "table-row");
+                                    $('#ielts_test_date_c_label').parent().css("display", "none");
+                                }
+
+                            })
+
+
+                        }
+                        else {
+                            $('#ielts_overall_c_label,#ielts_result_awaited_c_label,#ielts_test_date_c_label,#ielts_writing_c_label,#ielts_speaking_c_label').parent().css("display", "none");
+                        }
+                    });
+
                 })
             })(jQuery)
         </script>

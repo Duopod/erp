@@ -99,7 +99,6 @@ class script
 
                         $('#conditional_offer_c_label').parent().css("display", "table-row");
 
-
                         $('#conditional_offer_c').change(function () {
                             if (this.checked)
                                 $('#additional_pendency_remark_c_label').parent().css("display", "table-row");
@@ -107,8 +106,6 @@ class script
                                 $('#additional_pendency_remark_c_label').parent().css("display", "none");
 
                         });
-
-
                         //Hides the Select Course Button and Clear Button on course Select
                         $('#btn_anmol_course_search_anmol_applicationss_2_name').css("display", "none");
                         $('#btn_clr_anmol_course_search_anmol_applicationss_2_name').css("display", "none");

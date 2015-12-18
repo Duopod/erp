@@ -11,11 +11,7 @@ class operations_after1
 
     public function operations_after1($bean, $event, $arguments)
     {
-        // Create Application Stage Automatically
-        // print_r($bean);
-        //   echo $bean->id;
-        //    print_r($bean);
-        //   echo $bean->contacts_anmol_applicationss_1contacts_ida;
+        // Add Branch
         global $current_user;
 
         $created_by_id = $current_user->id;
@@ -43,6 +39,7 @@ class operations_after1
         }
         ////////
 
+        // Create Application Stage Automatically
 
         $n = new anmol_application_stages();
         $n->name = "Stage 0";
